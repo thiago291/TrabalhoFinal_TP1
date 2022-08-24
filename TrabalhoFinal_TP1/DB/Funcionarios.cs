@@ -8,7 +8,7 @@ namespace TrabalhoFinal_TP1.DB
 {
     public class Funcionarios
     {
-        Dictionary<int, string> funcionarios = new()
+        readonly Dictionary<int, string> funcionarios = new()
         {
             { 1,   "Rafael Rocha Dias" },
             { 2,   "Larissa Fernandes Pinto" },
