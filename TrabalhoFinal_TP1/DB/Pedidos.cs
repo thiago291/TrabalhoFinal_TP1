@@ -8,6 +8,7 @@ namespace TrabalhoFinal_TP1.DB
 {
     public class Pedidos
     {
+        public int Cod_Pedido { get; set; }
         public int ID_Atendente { get; set; }
         public string Placa { get; set; }
         public string CPF { get; set; }
@@ -16,9 +17,10 @@ namespace TrabalhoFinal_TP1.DB
         public int NumDiaria { get; set; }
         public double ValorTotal { get; set; }
 
-        public Pedidos(int iD_Atendente, string placa, string cpf, DateTime dataAluguel, DateTime dataRetorno, int numDiaria, double valorTotal)
+        public Pedidos(int cod_pedido, int id_Atendente, string placa, string cpf, DateTime dataAluguel, DateTime dataRetorno, int numDiaria, double valorTotal)
         {
-            ID_Atendente = iD_Atendente;
+            Cod_Pedido = cod_pedido;
+            ID_Atendente = id_Atendente;
             Placa = placa;
             CPF = cpf;
             DataAluguel = dataAluguel;

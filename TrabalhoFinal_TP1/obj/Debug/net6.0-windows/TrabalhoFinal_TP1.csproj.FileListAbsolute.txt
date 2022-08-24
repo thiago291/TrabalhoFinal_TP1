@@ -56,3 +56,7 @@ C:\Users\fabio\source\repos\TrabalhoFinal_TP1\TrabalhoFinal_TP1\obj\Debug\net6.0
 C:\Users\fabio\source\repos\TrabalhoFinal_TP1\TrabalhoFinal_TP1\obj\Debug\net6.0-windows\TrabalhoFinal_TP1.pdb
 C:\Users\fabio\source\repos\TrabalhoFinal_TP1\TrabalhoFinal_TP1\obj\Debug\net6.0-windows\TrabalhoFinal_TP1.genruntimeconfig.cache
 C:\Users\fabio\source\repos\TrabalhoFinal_TP1\TrabalhoFinal_TP1\obj\Debug\net6.0-windows\ref\TrabalhoFinal_TP1.dll
+H:\github\TrabalhoFinal_TP1\TrabalhoFinal_TP1\obj\Debug\net6.0-windows\TrabalhoFinal_TP1.FormCadastroCliente.resources
+H:\github\TrabalhoFinal_TP1\TrabalhoFinal_TP1\obj\Debug\net6.0-windows\TrabalhoFinal_TP1.FormConsultaCarro.resources
+H:\github\TrabalhoFinal_TP1\TrabalhoFinal_TP1\obj\Debug\net6.0-windows\TrabalhoFinal_TP1.FormConsultaPedidos.resources
+H:\github\TrabalhoFinal_TP1\TrabalhoFinal_TP1\obj\Debug\net6.0-windows\TrabalhoFinal_TP1.FormSobre.resources

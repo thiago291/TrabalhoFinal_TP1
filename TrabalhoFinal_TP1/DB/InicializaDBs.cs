@@ -9,13 +9,22 @@ namespace TrabalhoFinal_TP1.DB
     public class InicializaDBs
     {
         public void db()
-        {
+        { 
+            #region adição de pedidos
             List<Pedidos> pedidos = new();
+            pedidos.Add(new Pedidos(1, 1, "FIK4152", "28695172465", DateTime.Today, DateTime.Today.AddDays(9), 9, 1260));
+            pedidos.Add(new Pedidos(2, 10, "FGH5632", "93056380405", DateTime.Today, DateTime.Today.AddDays(4), 4, 400));
+            pedidos.Add(new Pedidos(3, 10, "GHJ5258", "62868467431", DateTime.Today, DateTime.Today.AddDays(7), 7, 1050));
+            pedidos.Add(new Pedidos(4, 8, "CBF7852", "33185886011", DateTime.Today, DateTime.Today.AddDays(8), 8, 800));
+            pedidos.Add(new Pedidos(5, 7, "BOL5260", "59517182600", DateTime.Today, DateTime.Today.AddDays(1), 1, 70));
+            pedidos.Add(new Pedidos(6, 9, "DFQ4561", "7045527284", DateTime.Today, DateTime.Today.AddDays(7), 7, 490));
+            pedidos.Add(new Pedidos(7, 9, "GOL4567", "11856149072", DateTime.Today, DateTime.Today.AddDays(8), 8, 880));
+            int numPedido = pedidos.Count;
+            #endregion
 
-
-
-
+            #region adição de carros
             List<Carros> carros = new();
+            #endregion
 
             //(string placa, string infoCarro, double precoDiaria, bool disponibilidade)
             carros.Add(new Carros("BOL1230", "Chevrolet Marea 2001/2.0 Manual", 45, true));
