@@ -10,10 +10,10 @@ namespace TrabalhoFinal_TP1.DB
     {
         readonly Dictionary<int, string> funcionarios = new()
         {
-            { 1,   "Rafael Rocha Dias" },
-            { 2,   "Larissa Fernandes Pinto" },
-            { 3,   "Amanda Fernandes Almeida" },
-            {4,   "Kai Cavalcante Souza" },
+            {1,   "Rafael Rocha Dias"},
+            {2,   "Larissa Fernandes Pinto"},
+            {3,   "Amanda Fernandes Almeida"},
+            {4,   "Kai Cavalcante Souza"},
             {5,   "Eduarda Gomes Santos"},
             {6,   "Evelyn Sousa Cavalcanti"},
             {7,   "Douglas Lima Araújo"},

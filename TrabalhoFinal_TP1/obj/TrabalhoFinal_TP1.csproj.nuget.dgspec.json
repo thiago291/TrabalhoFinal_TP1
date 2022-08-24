@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "H:\\github\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1.csproj": {}
+    "C:\\Users\\fabio\\source\\repos\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1.csproj": {}
   },
   "projects": {
-    "H:\\github\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1.csproj": {
+    "C:\\Users\\fabio\\source\\repos\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\github\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1.csproj",
+        "projectUniqueName": "C:\\Users\\fabio\\source\\repos\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1.csproj",
         "projectName": "TrabalhoFinal_TP1",
-        "projectPath": "H:\\github\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1.csproj",
-        "packagesPath": "C:\\Users\\thiag\\.nuget\\packages\\",
-        "outputPath": "H:\\github\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1\\obj\\",
+        "projectPath": "C:\\Users\\fabio\\source\\repos\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1.csproj",
+        "packagesPath": "C:\\Users\\fabio\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fabio\\source\\repos\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\thiag\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fabio\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

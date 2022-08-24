@@ -56,11 +56,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(309, 206);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "FormSobre";
-            this.Text = "FormSobre";
+            this.Text = "Sobre o projeto";
             this.ResumeLayout(false);
 
         }
