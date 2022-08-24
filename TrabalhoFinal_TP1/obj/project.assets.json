@@ -8,23 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\thiag\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\fabio\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\github\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1.csproj",
+      "projectUniqueName": "C:\\Users\\fabio\\Source\\Repos\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1.csproj",
       "projectName": "TrabalhoFinal_TP1",
-      "projectPath": "H:\\github\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1.csproj",
-      "packagesPath": "C:\\Users\\thiag\\.nuget\\packages\\",
-      "outputPath": "H:\\github\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1\\obj\\",
+      "projectPath": "C:\\Users\\fabio\\Source\\Repos\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1.csproj",
+      "packagesPath": "C:\\Users\\fabio\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\fabio\\Source\\Repos\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\thiag\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\fabio\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -70,5 +66,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\fabio\\Source\\Repos\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
