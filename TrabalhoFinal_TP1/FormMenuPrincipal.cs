@@ -24,5 +24,26 @@ namespace TrabalhoFinal_TP1
             fp.ShowDialog();
             this.Show();
         }
+
+        private void btnCliente_Click(object sender, EventArgs e)
+        {
+            FormCadastroCliente fc = new();
+            this.Hide();
+            fc.ShowDialog();
+            this.Show();
+        }
+
+        private void btnCarros_Click(object sender, EventArgs e)
+        {
+            FormConsultaCarro fc = new();
+            this.Hide();
+            fc.ShowDialog();
+            this.Show();
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

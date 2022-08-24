@@ -45,6 +45,7 @@
             this.btnCliente.TabIndex = 0;
             this.btnCliente.Text = "Clientes";
             this.btnCliente.UseVisualStyleBackColor = true;
+            this.btnCliente.Click += new System.EventHandler(this.btnCliente_Click);
             // 
             // btnCarros
             // 
@@ -55,6 +56,7 @@
             this.btnCarros.TabIndex = 1;
             this.btnCarros.Text = "Consulta de carros";
             this.btnCarros.UseVisualStyleBackColor = true;
+            this.btnCarros.Click += new System.EventHandler(this.btnCarros_Click);
             // 
             // btnPedidos
             // 
@@ -86,6 +88,7 @@
             this.btnSair.TabIndex = 5;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // label1
             // 
