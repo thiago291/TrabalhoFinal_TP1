@@ -45,5 +45,26 @@ namespace TrabalhoFinal_TP1
         {
             this.Close();
         }
+
+        private void FormMenuPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnConsultaPedido_Click(object sender, EventArgs e)
+        {
+            FormConsultaPedidos fp = new();
+            this.Hide();
+            fp.ShowDialog();
+            this.Show();
+        }
+
+        private void btnSobre_Click(object sender, EventArgs e)
+        {
+            FormSobre fs = new();
+            this.Hide();
+            fs.ShowDialog();
+            this.Show();
+        }
     }
 }

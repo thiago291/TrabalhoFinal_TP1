@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace TrabalhoFinal_TP1
 {
-    public partial class FormPedidos : Form
+    public partial class FormConsultaPedidos : Form
     {
-        public FormPedidos()
+        public FormConsultaPedidos()
         {
             InitializeComponent();
         }
-
-       
     }
 }
