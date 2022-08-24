@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fabio\\source\\repos\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1.csproj": {}
+    "C:\\Users\\fabio\\Source\\Repos\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fabio\\source\\repos\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1.csproj": {
+    "C:\\Users\\fabio\\Source\\Repos\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fabio\\source\\repos\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1.csproj",
+        "projectUniqueName": "C:\\Users\\fabio\\Source\\Repos\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1.csproj",
         "projectName": "TrabalhoFinal_TP1",
-        "projectPath": "C:\\Users\\fabio\\source\\repos\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1.csproj",
+        "projectPath": "C:\\Users\\fabio\\Source\\Repos\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1.csproj",
         "packagesPath": "C:\\Users\\fabio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fabio\\source\\repos\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1\\obj\\",
+        "outputPath": "C:\\Users\\fabio\\Source\\Repos\\TrabalhoFinal_TP1\\TrabalhoFinal_TP1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\fabio\\AppData\\Roaming\\NuGet\\NuGet.Config",
