@@ -17,10 +17,10 @@ namespace TrabalhoFinal_TP1.DB
 
             List<Carros> carros = new();
 
+            //(string placa, string infoCarro, double precoDiaria, bool disponibilidade)
+            carros.Add(new Carros("BOL1230", "Chevrolet Marea 2001/2.0 Manual", 45, true));
             
-            carros.Add(new Carros("BOL1230","Chevrolet Marea 2001/2.0 Manual",45,true));
 
-            
 
 
             List<Clientes> clientes = new();
