@@ -11,7 +11,7 @@ namespace TrabalhoFinal_TP1.DB
         public string Nome { get; set; }
         public string CPF { get; set; }
         public string Celular { get; set; }
-        public DateTime DataDeNascimento { get; set; }
+        public string DataDeNascimento { get; set; }
         public string Email { get; set; }
         public string CNH { get; set; }
         public string Genero { get; set; }
@@ -20,7 +20,7 @@ namespace TrabalhoFinal_TP1.DB
         public string UF { get; set; }
         public string CEP { get; set; }
 
-        public Clientes(string nome, string cpf, string celular, DateTime datadenascimento, string email, string cnh, string genero,
+        public Clientes(string nome, string cpf, string celular, string datadenascimento, string email, string cnh, string genero,
             string endereco, string cidade, string uf, string cep)
         {
             Nome = nome;
