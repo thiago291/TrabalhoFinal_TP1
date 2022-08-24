@@ -8,5 +8,6 @@ namespace TrabalhoFinal_TP1.DB
 {
     public class Clientes
     {
+
     }
 }
