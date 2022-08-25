@@ -16,5 +16,10 @@ namespace TrabalhoFinal_TP1
         {
             InitializeComponent();
         }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

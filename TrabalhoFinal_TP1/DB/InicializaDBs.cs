@@ -24,9 +24,6 @@ namespace TrabalhoFinal_TP1.DB
 
             #region adição de carros
             List<Carros> carros = new();
-            #endregion
-
-            //(string placa, string infoCarro, double precoDiaria, bool disponibilidade)
             carros.Add(new Carros("BOL5260", "Fiat/Mobi/Preto/Hatch/1.0/Manual", 70, true));
             carros.Add(new Carros("DFQ4561", "Renault/Kwid/Branco/Hatch/1.0/Manual", 70, true));
             carros.Add(new Carros("ERY7845", "Volkswagen/Gol/Vermelho/Hatch/1.0/Manual", 80, true));
@@ -52,11 +49,7 @@ namespace TrabalhoFinal_TP1.DB
             carros.Add(new Carros("JLO2525", "Chevrolet/Spin/Prata/Minivan/1.8/Automatico", 140, true));
             carros.Add(new Carros("GHJ5258", "Renault/Zoe/Branco/Hatch//Automatico", 150, true));
             carros.Add(new Carros("JLO2321", "Toyota/Corolla Altis/Preto/SUV/1.8/Automatico", 150, true));
-
-
-
-
-
+            #endregion
 
             #region adição de clientes
             List<Clientes> clientes = new();
