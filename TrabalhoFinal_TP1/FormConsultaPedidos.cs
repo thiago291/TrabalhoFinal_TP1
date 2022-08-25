@@ -15,7 +15,7 @@ namespace TrabalhoFinal_TP1
     
     public partial class FormConsultaPedidos : Form
     {
-        InicializaDBs db = new();
+        
         public FormConsultaPedidos()
         {
             InitializeComponent();
@@ -30,12 +30,12 @@ namespace TrabalhoFinal_TP1
 
         private async void btnCons_Click(object sender, EventArgs e)
         {
-            btnNovaConsulta.Focus();
+            
             btnCons.Enabled = false;
             mtbNumPedido.ReadOnly = true;
             
             await Task.Delay(TimeSpan.FromSeconds(5));
-            if (!db.pedidos.Any(ped => ped.Cod_Pedido == int.Parse(mtbNumPedido.Text)))
+            if (!InicializaDBs.pedidos.Any(ped => ped.Cod_Pedido == int.Parse(mtbNumPedido.Text)))
             {
                 MessageBox.Show("Pedido não existe, tente novamente");
                 btnCons.Enabled = true;
@@ -43,9 +43,18 @@ namespace TrabalhoFinal_TP1
             }
             else
             {
-
+                Pedidos p = InicializaDBs.pedidos.Find(ped => ped.Cod_Pedido == int.Parse(mtbNumPedido.Text));
+                txb_ID_Atendente.Text = p.ID_Atendente.ToString();
+                txb_Placa_Carro.Text = p.Placa;
+                txb_CPF.Text = p.CPF;
+                mtbDataAluguel.Text = p.DataAluguel.ToString("dd/MM/yyyy");
+                mtbDataRetorno.Text = p.DataRetorno.ToString("dd/MM/yyyy");
+                txb_Nº_Diarias.Text = p.NumDiaria.ToString();
+                mtb_Valor_Total.Text = $"R$ {p.ValorTotal.ToString("0.00")}";
+                btnCons.Enabled = true;
+                
             }
         }
-        
+
     }
 }

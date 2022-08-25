@@ -68,7 +68,7 @@
             this.mtbPlaca.PromptChar = ' ';
             this.mtbPlaca.Size = new System.Drawing.Size(69, 23);
             this.mtbPlaca.TabIndex = 2;
-            // 
+           
             // lblAlugado
             // 
             this.lblAlugado.AutoSize = true;
