@@ -41,8 +41,6 @@
             this.mtbEmailCli = new System.Windows.Forms.MaskedTextBox();
             this.lblCnhCli = new System.Windows.Forms.Label();
             this.mtbCnhCli = new System.Windows.Forms.MaskedTextBox();
-            this.lblGenCli = new System.Windows.Forms.Label();
-            this.mtbGenCli = new System.Windows.Forms.MaskedTextBox();
             this.lblEndereçoCli = new System.Windows.Forms.Label();
             this.lblRuaCli = new System.Windows.Forms.Label();
             this.mtbRuaCli = new System.Windows.Forms.MaskedTextBox();
@@ -60,6 +58,8 @@
             this.btnVoltar = new System.Windows.Forms.Button();
             this.btnConfirmar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
+            this.mtbGenero = new System.Windows.Forms.MaskedTextBox();
+            this.lblGen = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblDadosPessoais
@@ -82,6 +82,7 @@
             // 
             // mtbNomeCli
             // 
+            this.mtbNomeCli.Enabled = false;
             this.mtbNomeCli.Location = new System.Drawing.Point(7, 114);
             this.mtbNomeCli.Name = "mtbNomeCli";
             this.mtbNomeCli.Size = new System.Drawing.Size(175, 23);
@@ -92,14 +93,14 @@
             this.lblCpfCli.AutoSize = true;
             this.lblCpfCli.Location = new System.Drawing.Point(7, 38);
             this.lblCpfCli.Name = "lblCpfCli";
-            this.lblCpfCli.Size = new System.Drawing.Size(28, 15);
+            this.lblCpfCli.Size = new System.Drawing.Size(135, 15);
             this.lblCpfCli.TabIndex = 1;
-            this.lblCpfCli.Text = "CPF";
+            this.lblCpfCli.Text = "CPF (somente números)";
             // 
             // mtbCpfCli
             // 
-            this.mtbCpfCli.Location = new System.Drawing.Point(7, 56);
-            this.mtbCpfCli.Mask = "000.000.000-00";
+            this.mtbCpfCli.Location = new System.Drawing.Point(12, 56);
+            this.mtbCpfCli.Mask = "00000000000";
             this.mtbCpfCli.Name = "mtbCpfCli";
             this.mtbCpfCli.Size = new System.Drawing.Size(126, 23);
             this.mtbCpfCli.TabIndex = 2;
@@ -115,6 +116,7 @@
             // 
             // mtbCelCli
             // 
+            this.mtbCelCli.Enabled = false;
             this.mtbCelCli.Location = new System.Drawing.Point(188, 114);
             this.mtbCelCli.Mask = "(00) 00000-0000";
             this.mtbCelCli.Name = "mtbCelCli";
@@ -132,6 +134,7 @@
             // 
             // mtbDataNascCli
             // 
+            this.mtbDataNascCli.Enabled = false;
             this.mtbDataNascCli.Location = new System.Drawing.Point(320, 114);
             this.mtbDataNascCli.Mask = "00/00/0000";
             this.mtbDataNascCli.Name = "mtbDataNascCli";
@@ -150,6 +153,7 @@
             // 
             // mtbEmailCli
             // 
+            this.mtbEmailCli.Enabled = false;
             this.mtbEmailCli.Location = new System.Drawing.Point(7, 159);
             this.mtbEmailCli.Name = "mtbEmailCli";
             this.mtbEmailCli.Size = new System.Drawing.Size(175, 23);
@@ -166,28 +170,12 @@
             // 
             // mtbCnhCli
             // 
+            this.mtbCnhCli.Enabled = false;
             this.mtbCnhCli.Location = new System.Drawing.Point(188, 159);
             this.mtbCnhCli.Mask = "00000000000";
             this.mtbCnhCli.Name = "mtbCnhCli";
             this.mtbCnhCli.Size = new System.Drawing.Size(126, 23);
             this.mtbCnhCli.TabIndex = 2;
-            // 
-            // lblGenCli
-            // 
-            this.lblGenCli.AutoSize = true;
-            this.lblGenCli.Location = new System.Drawing.Point(320, 141);
-            this.lblGenCli.Name = "lblGenCli";
-            this.lblGenCli.Size = new System.Drawing.Size(45, 15);
-            this.lblGenCli.TabIndex = 1;
-            this.lblGenCli.Text = "Gênero";
-            // 
-            // mtbGenCli
-            // 
-            this.mtbGenCli.Location = new System.Drawing.Point(320, 159);
-            this.mtbGenCli.Mask = "00000000000";
-            this.mtbGenCli.Name = "mtbGenCli";
-            this.mtbGenCli.Size = new System.Drawing.Size(126, 23);
-            this.mtbGenCli.TabIndex = 2;
             // 
             // lblEndereçoCli
             // 
@@ -209,6 +197,7 @@
             // 
             // mtbRuaCli
             // 
+            this.mtbRuaCli.Enabled = false;
             this.mtbRuaCli.Location = new System.Drawing.Point(7, 258);
             this.mtbRuaCli.Name = "mtbRuaCli";
             this.mtbRuaCli.Size = new System.Drawing.Size(175, 23);
@@ -225,6 +214,7 @@
             // 
             // mtbNumCli
             // 
+            this.mtbNumCli.Enabled = false;
             this.mtbNumCli.Location = new System.Drawing.Point(188, 258);
             this.mtbNumCli.Mask = "00000";
             this.mtbNumCli.Name = "mtbNumCli";
@@ -243,6 +233,7 @@
             // 
             // mtbCidadeCli
             // 
+            this.mtbCidadeCli.Enabled = false;
             this.mtbCidadeCli.Location = new System.Drawing.Point(7, 302);
             this.mtbCidadeCli.Name = "mtbCidadeCli";
             this.mtbCidadeCli.Size = new System.Drawing.Size(175, 23);
@@ -259,6 +250,7 @@
             // 
             // mtbUfCli
             // 
+            this.mtbUfCli.Enabled = false;
             this.mtbUfCli.Location = new System.Drawing.Point(188, 302);
             this.mtbUfCli.Mask = "AA";
             this.mtbUfCli.Name = "mtbUfCli";
@@ -276,6 +268,7 @@
             // 
             // mtbCepCli
             // 
+            this.mtbCepCli.Enabled = false;
             this.mtbCepCli.Location = new System.Drawing.Point(227, 302);
             this.mtbCepCli.Mask = "00000-000";
             this.mtbCepCli.Name = "mtbCepCli";
@@ -293,6 +286,7 @@
             // 
             // mtbComplemento
             // 
+            this.mtbComplemento.Enabled = false;
             this.mtbComplemento.Location = new System.Drawing.Point(227, 258);
             this.mtbComplemento.Name = "mtbComplemento";
             this.mtbComplemento.Size = new System.Drawing.Size(175, 23);
@@ -326,6 +320,7 @@
             this.btnConfirmar.TabIndex = 4;
             this.btnConfirmar.Text = "Confirmar";
             this.btnConfirmar.UseVisualStyleBackColor = true;
+            this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
             // btnLimpar
             // 
@@ -335,12 +330,33 @@
             this.btnLimpar.TabIndex = 5;
             this.btnLimpar.Text = "Nova consulta";
             this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
+            // mtbGenero
+            // 
+            this.mtbGenero.Enabled = false;
+            this.mtbGenero.Location = new System.Drawing.Point(320, 159);
+            this.mtbGenero.Mask = "a";
+            this.mtbGenero.Name = "mtbGenero";
+            this.mtbGenero.Size = new System.Drawing.Size(126, 23);
+            this.mtbGenero.TabIndex = 7;
+            // 
+            // lblGen
+            // 
+            this.lblGen.AutoSize = true;
+            this.lblGen.Location = new System.Drawing.Point(320, 141);
+            this.lblGen.Name = "lblGen";
+            this.lblGen.Size = new System.Drawing.Size(45, 15);
+            this.lblGen.TabIndex = 6;
+            this.lblGen.Text = "Gênero";
             // 
             // FormCadastroCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(459, 365);
+            this.Controls.Add(this.mtbGenero);
+            this.Controls.Add(this.lblGen);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.btnVoltar);
@@ -349,8 +365,6 @@
             this.Controls.Add(this.lblDataNascCli);
             this.Controls.Add(this.mtbCelCli);
             this.Controls.Add(this.lblCelCli);
-            this.Controls.Add(this.mtbGenCli);
-            this.Controls.Add(this.lblGenCli);
             this.Controls.Add(this.mtbCnhCli);
             this.Controls.Add(this.lblCnhCli);
             this.Controls.Add(this.mtbCpfCli);
@@ -373,7 +387,9 @@
             this.Controls.Add(this.lblNomeCli);
             this.Controls.Add(this.lblEndereçoCli);
             this.Controls.Add(this.lblDadosPessoais);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormCadastroCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Let\'s Drive - CADASTRO CLIENTE";
             this.Load += new System.EventHandler(this.FormCadastroCliente_Load);
             this.ResumeLayout(false);
@@ -396,8 +412,6 @@
         private MaskedTextBox mtbEmailCli;
         private Label lblCnhCli;
         private MaskedTextBox mtbCnhCli;
-        private Label lblGenCli;
-        private MaskedTextBox mtbGenCli;
         private Label lblEndereçoCli;
         private Label lblRuaCli;
         private MaskedTextBox mtbRuaCli;
@@ -415,5 +429,7 @@
         private Button btnVoltar;
         private Button btnConfirmar;
         private Button btnLimpar;
+        private MaskedTextBox mtbGenero;
+        private Label lblGen;
     }
 }
