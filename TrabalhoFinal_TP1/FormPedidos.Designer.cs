@@ -36,10 +36,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.mtbDataAluguel = new System.Windows.Forms.MaskedTextBox();
-            this.mtbDataRetorno = new System.Windows.Forms.MaskedTextBox();
             this.mtb_Valor_Total = new System.Windows.Forms.MaskedTextBox();
             this.lblValorTotal = new System.Windows.Forms.Label();
             this.lblPedido = new System.Windows.Forms.Label();
@@ -70,7 +68,7 @@
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(11, 327);
+            this.textBox6.Location = new System.Drawing.Point(10, 275);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(255, 23);
             this.textBox6.TabIndex = 5;
@@ -111,19 +109,10 @@
             this.label4.TabIndex = 11;
             this.label4.Text = "Data de aluguel:";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(11, 256);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(92, 15);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Data de retorno:";
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(10, 309);
+            this.label6.Location = new System.Drawing.Point(9, 257);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(107, 15);
             this.label6.TabIndex = 13;
@@ -137,17 +126,10 @@
             this.mtbDataAluguel.Size = new System.Drawing.Size(255, 23);
             this.mtbDataAluguel.TabIndex = 14;
             // 
-            // mtbDataRetorno
-            // 
-            this.mtbDataRetorno.Location = new System.Drawing.Point(11, 274);
-            this.mtbDataRetorno.Mask = "__/__/____";
-            this.mtbDataRetorno.Name = "mtbDataRetorno";
-            this.mtbDataRetorno.Size = new System.Drawing.Size(255, 23);
-            this.mtbDataRetorno.TabIndex = 15;
-            // 
             // mtb_Valor_Total
             // 
-            this.mtb_Valor_Total.Location = new System.Drawing.Point(11, 376);
+            this.mtb_Valor_Total.Enabled = false;
+            this.mtb_Valor_Total.Location = new System.Drawing.Point(10, 324);
             this.mtb_Valor_Total.Mask = "$";
             this.mtb_Valor_Total.Name = "mtb_Valor_Total";
             this.mtb_Valor_Total.Size = new System.Drawing.Size(255, 23);
@@ -156,7 +138,7 @@
             // lblValorTotal
             // 
             this.lblValorTotal.AutoSize = true;
-            this.lblValorTotal.Location = new System.Drawing.Point(11, 358);
+            this.lblValorTotal.Location = new System.Drawing.Point(10, 306);
             this.lblValorTotal.Name = "lblValorTotal";
             this.lblValorTotal.Size = new System.Drawing.Size(61, 15);
             this.lblValorTotal.TabIndex = 28;
@@ -173,7 +155,7 @@
             // 
             // btnConfirmar
             // 
-            this.btnConfirmar.Location = new System.Drawing.Point(171, 405);
+            this.btnConfirmar.Location = new System.Drawing.Point(170, 353);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(95, 25);
             this.btnConfirmar.TabIndex = 30;
@@ -182,7 +164,7 @@
             // 
             // btnVoltar
             // 
-            this.btnVoltar.Location = new System.Drawing.Point(11, 405);
+            this.btnVoltar.Location = new System.Drawing.Point(10, 353);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(95, 25);
             this.btnVoltar.TabIndex = 30;
@@ -194,15 +176,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(282, 446);
+            this.ClientSize = new System.Drawing.Size(282, 390);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.mtb_Valor_Total);
             this.Controls.Add(this.lblValorTotal);
-            this.Controls.Add(this.mtbDataRetorno);
             this.Controls.Add(this.mtbDataAluguel);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblPedido);
             this.Controls.Add(this.label3);
@@ -231,10 +211,8 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private Label label5;
         private Label label6;
         private MaskedTextBox mtbDataAluguel;
-        private MaskedTextBox mtbDataRetorno;
         private MaskedTextBox mtb_Valor_Total;
         private Label lblValorTotal;
         private Label lblPedido;
