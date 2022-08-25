@@ -72,7 +72,7 @@ namespace TrabalhoFinal_TP1
 
         private async void btnNovaConsulta_Click(object sender, EventArgs e)
         {
-            await Task.Delay(TimeSpan.FromSeconds(1&77&));
+            await Task.Delay(TimeSpan.FromSeconds(1));
             lblAviso.Text = "";
             mtbNumPedido.Clear();
             txb_ID_Atendente.Clear();
