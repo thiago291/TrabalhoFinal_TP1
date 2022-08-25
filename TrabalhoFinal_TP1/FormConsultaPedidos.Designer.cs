@@ -73,7 +73,6 @@
             // mtbDataRetorno
             // 
             this.mtbDataRetorno.Location = new System.Drawing.Point(7, 282);
-            this.mtbDataRetorno.Mask = "__/__/____";
             this.mtbDataRetorno.Name = "mtbDataRetorno";
             this.mtbDataRetorno.Size = new System.Drawing.Size(255, 23);
             this.mtbDataRetorno.TabIndex = 27;
@@ -81,7 +80,6 @@
             // mtbDataAluguel
             // 
             this.mtbDataAluguel.Location = new System.Drawing.Point(7, 233);
-            this.mtbDataAluguel.Mask = "__/__/____";
             this.mtbDataAluguel.Name = "mtbDataAluguel";
             this.mtbDataAluguel.Size = new System.Drawing.Size(255, 23);
             this.mtbDataAluguel.TabIndex = 26;
@@ -180,7 +178,6 @@
             // mtb_Valor_Total
             // 
             this.mtb_Valor_Total.Location = new System.Drawing.Point(7, 371);
-            this.mtb_Valor_Total.Mask = "$";
             this.mtb_Valor_Total.Name = "mtb_Valor_Total";
             this.mtb_Valor_Total.Size = new System.Drawing.Size(255, 23);
             this.mtb_Valor_Total.TabIndex = 27;
