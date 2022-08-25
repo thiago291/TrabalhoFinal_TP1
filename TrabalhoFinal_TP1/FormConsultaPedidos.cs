@@ -87,6 +87,7 @@ namespace TrabalhoFinal_TP1
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            Pedidos p = InicializaDBs.pedidos.Find(ped => ped.Cod_Pedido == int.Parse(mtbNumPedido.Text));
 
         }
     }

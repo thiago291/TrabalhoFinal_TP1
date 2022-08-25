@@ -212,7 +212,9 @@
             this.Controls.Add(this.txb_CPF);
             this.Controls.Add(this.txb_Placa_Carro);
             this.Controls.Add(this.txb_ID_Atendente);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormPedidos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormPedidos";
             this.ResumeLayout(false);
             this.PerformLayout();
