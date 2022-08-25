@@ -28,50 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txb_ID_Atendente = new System.Windows.Forms.TextBox();
-            this.txb_Placa_Carro = new System.Windows.Forms.TextBox();
-            this.txb_CPF = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.mtbDataAluguel = new System.Windows.Forms.MaskedTextBox();
             this.mtb_Valor_Total = new System.Windows.Forms.MaskedTextBox();
             this.lblValorTotal = new System.Windows.Forms.Label();
             this.lblPedido = new System.Windows.Forms.Label();
             this.btnConfirmar = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
+            this.mtb_CPF = new System.Windows.Forms.MaskedTextBox();
+            this.mtb_Atendente = new System.Windows.Forms.MaskedTextBox();
+            this.mtb_Placa = new System.Windows.Forms.MaskedTextBox();
+            this.lblCPF = new System.Windows.Forms.Label();
+            this.lblPlaca = new System.Windows.Forms.Label();
+            this.lblIDValido = new System.Windows.Forms.Label();
+            this.mtbDiarias = new System.Windows.Forms.MaskedTextBox();
+            this.dtpAluguel = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
-            // 
-            // txb_ID_Atendente
-            // 
-            this.txb_ID_Atendente.Location = new System.Drawing.Point(11, 115);
-            this.txb_ID_Atendente.Name = "txb_ID_Atendente";
-            this.txb_ID_Atendente.Size = new System.Drawing.Size(255, 23);
-            this.txb_ID_Atendente.TabIndex = 0;
-            // 
-            // txb_Placa_Carro
-            // 
-            this.txb_Placa_Carro.Location = new System.Drawing.Point(11, 168);
-            this.txb_Placa_Carro.Name = "txb_Placa_Carro";
-            this.txb_Placa_Carro.Size = new System.Drawing.Size(255, 23);
-            this.txb_Placa_Carro.TabIndex = 1;
-            // 
-            // txb_CPF
-            // 
-            this.txb_CPF.Location = new System.Drawing.Point(10, 59);
-            this.txb_CPF.Name = "txb_CPF";
-            this.txb_CPF.Size = new System.Drawing.Size(256, 23);
-            this.txb_CPF.TabIndex = 2;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(10, 275);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(255, 23);
-            this.textBox6.TabIndex = 5;
             // 
             // label1
             // 
@@ -112,25 +87,16 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(9, 257);
+            this.label6.Location = new System.Drawing.Point(10, 258);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(107, 15);
             this.label6.TabIndex = 13;
             this.label6.Text = "Número de diárias:";
             // 
-            // mtbDataAluguel
-            // 
-            this.mtbDataAluguel.Location = new System.Drawing.Point(11, 221);
-            this.mtbDataAluguel.Mask = "__/__/____";
-            this.mtbDataAluguel.Name = "mtbDataAluguel";
-            this.mtbDataAluguel.Size = new System.Drawing.Size(255, 23);
-            this.mtbDataAluguel.TabIndex = 14;
-            // 
             // mtb_Valor_Total
             // 
             this.mtb_Valor_Total.Enabled = false;
-            this.mtb_Valor_Total.Location = new System.Drawing.Point(10, 324);
-            this.mtb_Valor_Total.Mask = "$";
+            this.mtb_Valor_Total.Location = new System.Drawing.Point(11, 325);
             this.mtb_Valor_Total.Name = "mtb_Valor_Total";
             this.mtb_Valor_Total.Size = new System.Drawing.Size(255, 23);
             this.mtb_Valor_Total.TabIndex = 29;
@@ -138,7 +104,7 @@
             // lblValorTotal
             // 
             this.lblValorTotal.AutoSize = true;
-            this.lblValorTotal.Location = new System.Drawing.Point(10, 306);
+            this.lblValorTotal.Location = new System.Drawing.Point(11, 307);
             this.lblValorTotal.Name = "lblValorTotal";
             this.lblValorTotal.Size = new System.Drawing.Size(61, 15);
             this.lblValorTotal.TabIndex = 28;
@@ -155,16 +121,17 @@
             // 
             // btnConfirmar
             // 
-            this.btnConfirmar.Location = new System.Drawing.Point(170, 353);
+            this.btnConfirmar.Location = new System.Drawing.Point(171, 354);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(95, 25);
             this.btnConfirmar.TabIndex = 30;
             this.btnConfirmar.Text = "Confirmar";
             this.btnConfirmar.UseVisualStyleBackColor = true;
+            this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
             // btnVoltar
             // 
-            this.btnVoltar.Location = new System.Drawing.Point(10, 353);
+            this.btnVoltar.Location = new System.Drawing.Point(11, 354);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(95, 25);
             this.btnVoltar.TabIndex = 30;
@@ -172,51 +139,130 @@
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
+            // mtb_CPF
+            // 
+            this.mtb_CPF.Location = new System.Drawing.Point(10, 59);
+            this.mtb_CPF.Mask = "00000000000";
+            this.mtb_CPF.Name = "mtb_CPF";
+            this.mtb_CPF.PromptChar = ' ';
+            this.mtb_CPF.Size = new System.Drawing.Size(151, 23);
+            this.mtb_CPF.TabIndex = 31;
+            this.mtb_CPF.TextChanged += new System.EventHandler(this.mtb_CPF_TextChanged);
+            // 
+            // mtb_Atendente
+            // 
+            this.mtb_Atendente.Location = new System.Drawing.Point(10, 115);
+            this.mtb_Atendente.Mask = "00000";
+            this.mtb_Atendente.Name = "mtb_Atendente";
+            this.mtb_Atendente.PromptChar = ' ';
+            this.mtb_Atendente.Size = new System.Drawing.Size(95, 23);
+            this.mtb_Atendente.TabIndex = 32;
+            this.mtb_Atendente.TextChanged += new System.EventHandler(this.mtb_Atendente_TextChanged);
+            // 
+            // mtb_Placa
+            // 
+            this.mtb_Placa.Location = new System.Drawing.Point(10, 168);
+            this.mtb_Placa.Mask = "aaa0000";
+            this.mtb_Placa.Name = "mtb_Placa";
+            this.mtb_Placa.PromptChar = ' ';
+            this.mtb_Placa.Size = new System.Drawing.Size(95, 23);
+            this.mtb_Placa.TabIndex = 33;
+            this.mtb_Placa.TextChanged += new System.EventHandler(this.mtb_Placa_TextChanged);
+            // 
+            // lblCPF
+            // 
+            this.lblCPF.AutoSize = true;
+            this.lblCPF.Location = new System.Drawing.Point(171, 62);
+            this.lblCPF.Name = "lblCPF";
+            this.lblCPF.Size = new System.Drawing.Size(0, 15);
+            this.lblCPF.TabIndex = 34;
+            // 
+            // lblPlaca
+            // 
+            this.lblPlaca.AutoSize = true;
+            this.lblPlaca.Location = new System.Drawing.Point(117, 171);
+            this.lblPlaca.Name = "lblPlaca";
+            this.lblPlaca.Size = new System.Drawing.Size(0, 15);
+            this.lblPlaca.TabIndex = 35;
+            // 
+            // lblIDValido
+            // 
+            this.lblIDValido.AutoSize = true;
+            this.lblIDValido.Location = new System.Drawing.Point(117, 123);
+            this.lblIDValido.Name = "lblIDValido";
+            this.lblIDValido.Size = new System.Drawing.Size(0, 15);
+            this.lblIDValido.TabIndex = 36;
+            // 
+            // mtbDiarias
+            // 
+            this.mtbDiarias.Location = new System.Drawing.Point(10, 276);
+            this.mtbDiarias.Mask = "000";
+            this.mtbDiarias.Name = "mtbDiarias";
+            this.mtbDiarias.PromptChar = ' ';
+            this.mtbDiarias.Size = new System.Drawing.Size(256, 23);
+            this.mtbDiarias.TabIndex = 37;
+            this.mtbDiarias.TextChanged += new System.EventHandler(this.mtbDiarias_TextChanged);
+            // 
+            // dtpAluguel
+            // 
+            this.dtpAluguel.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpAluguel.Location = new System.Drawing.Point(13, 221);
+            this.dtpAluguel.Name = "dtpAluguel";
+            this.dtpAluguel.Size = new System.Drawing.Size(93, 23);
+            this.dtpAluguel.TabIndex = 38;
+            this.dtpAluguel.Value = new System.DateTime(2022, 8, 25, 18, 25, 50, 0);
+            // 
             // FormPedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(282, 390);
+            this.ClientSize = new System.Drawing.Size(282, 387);
+            this.Controls.Add(this.dtpAluguel);
+            this.Controls.Add(this.mtbDiarias);
+            this.Controls.Add(this.lblIDValido);
+            this.Controls.Add(this.lblPlaca);
+            this.Controls.Add(this.lblCPF);
+            this.Controls.Add(this.mtb_Placa);
+            this.Controls.Add(this.mtb_Atendente);
+            this.Controls.Add(this.mtb_CPF);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.mtb_Valor_Total);
             this.Controls.Add(this.lblValorTotal);
-            this.Controls.Add(this.mtbDataAluguel);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblPedido);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.txb_CPF);
-            this.Controls.Add(this.txb_Placa_Carro);
-            this.Controls.Add(this.txb_ID_Atendente);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormPedidos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormPedidos";
+            this.Load += new System.EventHandler(this.FormPedidos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private TextBox txb_ID_Atendente;
-        private TextBox txb_Placa_Carro;
-        private TextBox txb_CPF;
-        private TextBox textBox6;
         private Label label1;
         private Label label2;
         private Label label3;
         private Label label4;
         private Label label6;
-        private MaskedTextBox mtbDataAluguel;
         private MaskedTextBox mtb_Valor_Total;
         private Label lblValorTotal;
         private Label lblPedido;
         private Button btnConfirmar;
         private Button btnVoltar;
+        private MaskedTextBox mtb_CPF;
+        private MaskedTextBox mtb_Atendente;
+        private MaskedTextBox mtb_Placa;
+        private Label lblCPF;
+        private Label lblPlaca;
+        private Label lblIDValido;
+        private MaskedTextBox mtbDiarias;
+        private DateTimePicker dtpAluguel;
     }
 }

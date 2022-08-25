@@ -10,12 +10,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TrabalhoFinal_TP1.DB;
 
-namespace TrabalhoFinal_TP1
+namespace TrabalhoFinal_TP1 
 {
-
+    
     public partial class FormConsultaPedidos : Form
     {
-
+        
         public FormConsultaPedidos()
         {
             InitializeComponent();
@@ -26,18 +26,18 @@ namespace TrabalhoFinal_TP1
             this.Close();
         }
 
-
+        
 
         private async void btnCons_Click(object sender, EventArgs e)
         {
-
+            
             btnCons.Enabled = false;
             mtbNumPedido.ReadOnly = true;
-
-
+            
+            
             if (!InicializaDBs.pedidos.Any(ped => ped.Cod_Pedido == int.Parse(mtbNumPedido.Text)))
             {
-                await Task.Delay(TimeSpan.FromSeconds(3));
+                await Task.Delay(TimeSpan.FromSeconds(5));
                 MessageBox.Show("Pedido não existe, tente novamente");
                 btnCons.Enabled = true;
                 mtbNumPedido.ReadOnly = false;
@@ -65,14 +65,13 @@ namespace TrabalhoFinal_TP1
                 mtb_Valor_Total.Text = $"R$ {p.ValorTotal.ToString("0.00")}";
 
                 lblAviso.Text = "Busca concluída!";
-                btnDelete.Enabled = true;
                 lblAviso.ForeColor = Color.Green;
 
             }
         }
 
         private async void btnNovaConsulta_Click(object sender, EventArgs e)
-        {   
+        {
             await Task.Delay(TimeSpan.FromSeconds(1));
             lblAviso.Text = "";
             mtbNumPedido.Clear();
@@ -84,38 +83,12 @@ namespace TrabalhoFinal_TP1
             txb_Nº_Diarias.Clear();
             mtb_Valor_Total.Clear();
             btnCons.Enabled = true;
-            mtbNumPedido.ReadOnly = false;
-            btnDelete.Enabled = false;
-            mtbNumPedido.Focus();
         }
 
-        private async void btnDelete_Click(object sender, EventArgs e)
+        private void btnDelete_Click(object sender, EventArgs e)
         {
-            btnDelete.Enabled = false;
-            lblAviso.ForeColor = Color.Red;
-            lblAviso.Text = "Excluindo pedido, por favor aguarde...";
-            await Task.Delay(TimeSpan.FromSeconds(2));
-            InicializaDBs.pedidos.RemoveAt(InicializaDBs.pedidos.FindIndex(c => c.Cod_Pedido == int.Parse(mtbNumPedido.Text)));
-            mtbNumPedido.Clear();
-            txb_ID_Atendente.Clear();
-            txb_Placa_Carro.Clear();
-            txb_CPF.Clear();
-            mtbDataAluguel.Clear();
-            mtbDataRetorno.Clear();
-            txb_Nº_Diarias.Clear();
-            mtb_Valor_Total.Clear();
-            lblAviso.ForeColor = Color.Green;
-            lblAviso.Text = "Pedido excluído!";
-            mtbNumPedido.ReadOnly = false;
-            btnCons.Enabled = true;
-            mtbNumPedido.Focus();
+            Pedidos p = InicializaDBs.pedidos.Find(ped => ped.Cod_Pedido == int.Parse(mtbNumPedido.Text));
 
-        }
-
-        private void FormConsultaPedidos_Load(object sender, EventArgs e)
-        {
-            mtbNumPedido.Focus();
-            btnDelete.Enabled = false;
         }
     }
 }

@@ -11,6 +11,7 @@ namespace TrabalhoFinal_TP1.DB
         public static List<Pedidos> pedidos = new();
         public static List<Carros> carros = new();
         public static List<Clientes> clientes = new();
+        public static int numPedido;
         public void db()
         { 
             #region adição de pedidos
@@ -21,7 +22,7 @@ namespace TrabalhoFinal_TP1.DB
             pedidos.Add(new Pedidos(5, 7, "BOL5260", "59517182600", DateTime.Today, DateTime.Today.AddDays(1), 1, 70));
             pedidos.Add(new Pedidos(6, 9, "DFQ4561", "7045527284", DateTime.Today, DateTime.Today.AddDays(7), 7, 490));
             pedidos.Add(new Pedidos(7, 9, "GOL4567", "11856149072", DateTime.Today, DateTime.Today.AddDays(8), 8, 880));
-            int numPedido = pedidos.Count;
+            numPedido = pedidos.Count;
             #endregion
 
             #region adição de carros
