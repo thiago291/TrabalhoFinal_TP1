@@ -67,7 +67,5 @@ namespace TrabalhoFinal_TP1
             mtbPlaca.Focus();
             btnNovaConsulta.Enabled = false;
         }
-
-        
     }
 }
