@@ -39,8 +39,8 @@
             // 
             // btnCliente
             // 
-            this.btnCliente.Location = new System.Drawing.Point(53, 185);
-            this.btnCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCliente.Location = new System.Drawing.Point(48, 185);
+            this.btnCliente.Margin = new System.Windows.Forms.Padding(4);
             this.btnCliente.Name = "btnCliente";
             this.btnCliente.Size = new System.Drawing.Size(172, 38);
             this.btnCliente.TabIndex = 0;
@@ -50,8 +50,8 @@
             // 
             // btnCarros
             // 
-            this.btnCarros.Location = new System.Drawing.Point(53, 228);
-            this.btnCarros.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCarros.Location = new System.Drawing.Point(48, 228);
+            this.btnCarros.Margin = new System.Windows.Forms.Padding(4);
             this.btnCarros.Name = "btnCarros";
             this.btnCarros.Size = new System.Drawing.Size(172, 38);
             this.btnCarros.TabIndex = 1;
@@ -61,8 +61,8 @@
             // 
             // btnPedidos
             // 
-            this.btnPedidos.Location = new System.Drawing.Point(53, 94);
-            this.btnPedidos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPedidos.Location = new System.Drawing.Point(48, 94);
+            this.btnPedidos.Margin = new System.Windows.Forms.Padding(4);
             this.btnPedidos.Name = "btnPedidos";
             this.btnPedidos.Size = new System.Drawing.Size(172, 38);
             this.btnPedidos.TabIndex = 3;
@@ -72,8 +72,8 @@
             // 
             // btnSobre
             // 
-            this.btnSobre.Location = new System.Drawing.Point(53, 273);
-            this.btnSobre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSobre.Location = new System.Drawing.Point(48, 273);
+            this.btnSobre.Margin = new System.Windows.Forms.Padding(4);
             this.btnSobre.Name = "btnSobre";
             this.btnSobre.Size = new System.Drawing.Size(68, 38);
             this.btnSobre.TabIndex = 4;
@@ -83,8 +83,8 @@
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(154, 273);
-            this.btnSair.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSair.Location = new System.Drawing.Point(149, 273);
+            this.btnSair.Margin = new System.Windows.Forms.Padding(4);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(71, 38);
             this.btnSair.TabIndex = 5;
@@ -95,7 +95,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(5, 4);
+            this.label1.Location = new System.Drawing.Point(30, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(211, 63);
@@ -105,7 +105,7 @@
             // 
             // btnConsultaPedido
             // 
-            this.btnConsultaPedido.Location = new System.Drawing.Point(53, 137);
+            this.btnConsultaPedido.Location = new System.Drawing.Point(48, 137);
             this.btnConsultaPedido.Margin = new System.Windows.Forms.Padding(1, 3, 1, 3);
             this.btnConsultaPedido.Name = "btnConsultaPedido";
             this.btnConsultaPedido.Size = new System.Drawing.Size(172, 42);
@@ -118,7 +118,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(270, 402);
+            this.ClientSize = new System.Drawing.Size(270, 337);
             this.Controls.Add(this.btnConsultaPedido);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSair);
@@ -127,9 +127,13 @@
             this.Controls.Add(this.btnCarros);
             this.Controls.Add(this.btnCliente);
             this.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormMenuPrincipal";
-            this.Text = "FormMenuPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Let\'s Drive";
             this.Load += new System.EventHandler(this.FormMenuPrincipal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
