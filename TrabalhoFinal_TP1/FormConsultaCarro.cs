@@ -13,6 +13,8 @@ namespace TrabalhoFinal_TP1
 {
     public partial class FormConsultaCarro : Form
     {
+        InicializaDBs db = new();
+        
         public FormConsultaCarro()
         {
             InitializeComponent();
@@ -30,11 +32,40 @@ namespace TrabalhoFinal_TP1
             mtbValorDiaria.Text = "";
             ltbInfoCarro.Items.Clear();
             mtbPlaca.Focus();
+            btnNovaConsulta.Enabled = false;
+            btnConsulta.Enabled = true;
         }
 
-        private void btnConsulta_Click(object sender, EventArgs e)
+        private async void btnConsulta_Click(object sender, EventArgs e)
         {
-            InicializaDBs a = new();
+            btnConsulta.Enabled = false;
+            await Task.Delay(TimeSpan.FromSeconds(3));
+            if (!InicializaDBs.carros.Any(x => x.Placa == mtbPlaca.Text.ToUpper()))
+            {
+                MessageBox.Show("Placa não cadastrada");
+                btnConsulta.Enabled = true;
+                mtbPlaca.Focus();
+            }
+            else
+            {
+                Carros c = InicializaDBs.carros.Find(x => x.Placa == mtbPlaca.Text.ToUpper());
+                
+                if (c.Disponibilidade)
+                    mtbAlugado.Text = "Não";
+                else
+                    mtbAlugado.Text = "Sim";
+                string[] infos = c.InfoCarro.Split('/');
+                foreach (string info in infos)
+                    ltbInfoCarro.Items.Add(info);
+                mtbValorDiaria.Text = $"R$ {c.PrecoDiaria.ToString("0.00")}";
+                btnNovaConsulta.Enabled = true;
+            }
+        }
+
+        private void FormConsultaCarro_Load(object sender, EventArgs e)
+        {
+            mtbPlaca.Focus();
+            btnNovaConsulta.Enabled = false;
         }
     }
 }

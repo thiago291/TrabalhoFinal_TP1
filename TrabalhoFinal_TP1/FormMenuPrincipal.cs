@@ -15,6 +15,7 @@ namespace TrabalhoFinal_TP1
         public FormMenuPrincipal()
         {
             InitializeComponent();
+            
         }
 
         private void btnPedidos_Click(object sender, EventArgs e)
