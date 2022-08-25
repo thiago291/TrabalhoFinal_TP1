@@ -56,9 +56,10 @@
             this.mtbCepCli = new System.Windows.Forms.MaskedTextBox();
             this.lblComplemento = new System.Windows.Forms.Label();
             this.mtbComplemento = new System.Windows.Forms.MaskedTextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnBusca = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.btnConfirmar = new System.Windows.Forms.Button();
+            this.btnLimpar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblDadosPessoais
@@ -297,18 +298,19 @@
             this.mtbComplemento.Size = new System.Drawing.Size(175, 23);
             this.mtbComplemento.TabIndex = 2;
             // 
-            // button1
+            // btnBusca
             // 
-            this.button1.Location = new System.Drawing.Point(139, 56);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(32, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnBusca.Location = new System.Drawing.Point(139, 56);
+            this.btnBusca.Name = "btnBusca";
+            this.btnBusca.Size = new System.Drawing.Size(70, 23);
+            this.btnBusca.TabIndex = 3;
+            this.btnBusca.Text = "Buscar";
+            this.btnBusca.UseVisualStyleBackColor = true;
+            this.btnBusca.Click += new System.EventHandler(this.btnBusca_Click);
             // 
             // btnVoltar
             // 
-            this.btnVoltar.Location = new System.Drawing.Point(367, 342);
+            this.btnVoltar.Location = new System.Drawing.Point(345, 335);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(101, 24);
             this.btnVoltar.TabIndex = 4;
@@ -318,21 +320,31 @@
             // 
             // btnConfirmar
             // 
-            this.btnConfirmar.Location = new System.Drawing.Point(474, 342);
+            this.btnConfirmar.Location = new System.Drawing.Point(131, 336);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(101, 24);
             this.btnConfirmar.TabIndex = 4;
             this.btnConfirmar.Text = "Confirmar";
             this.btnConfirmar.UseVisualStyleBackColor = true;
             // 
+            // btnLimpar
+            // 
+            this.btnLimpar.Location = new System.Drawing.Point(238, 336);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(101, 23);
+            this.btnLimpar.TabIndex = 5;
+            this.btnLimpar.Text = "Nova consulta";
+            this.btnLimpar.UseVisualStyleBackColor = true;
+            // 
             // FormCadastroCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(580, 370);
+            this.ClientSize = new System.Drawing.Size(459, 365);
+            this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.btnVoltar);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnBusca);
             this.Controls.Add(this.mtbDataNascCli);
             this.Controls.Add(this.lblDataNascCli);
             this.Controls.Add(this.mtbCelCli);
@@ -363,6 +375,7 @@
             this.Controls.Add(this.lblDadosPessoais);
             this.Name = "FormCadastroCliente";
             this.Text = "Let\'s Drive - CADASTRO CLIENTE";
+            this.Load += new System.EventHandler(this.FormCadastroCliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -398,8 +411,9 @@
         private MaskedTextBox mtbCepCli;
         private Label lblComplemento;
         private MaskedTextBox mtbComplemento;
-        private Button button1;
+        private Button btnBusca;
         private Button btnVoltar;
         private Button btnConfirmar;
+        private Button btnLimpar;
     }
 }
