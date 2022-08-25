@@ -34,7 +34,7 @@
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(8, 11);
+            this.label1.Location = new System.Drawing.Point(12, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(285, 121);
             this.label1.TabIndex = 0;
@@ -44,7 +44,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(108, 154);
+            this.button1.Location = new System.Drawing.Point(110, 154);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(89, 40);
             this.button1.TabIndex = 1;
@@ -60,7 +60,9 @@
             this.ClientSize = new System.Drawing.Size(309, 206);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormSobre";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sobre o projeto";
             this.ResumeLayout(false);
 
