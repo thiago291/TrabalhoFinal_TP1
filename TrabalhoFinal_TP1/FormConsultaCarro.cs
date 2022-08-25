@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TrabalhoFinal_TP1.DB;
 
 namespace TrabalhoFinal_TP1
 {
@@ -20,6 +21,20 @@ namespace TrabalhoFinal_TP1
         private void btnMenu_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnNovaConsulta_Click(object sender, EventArgs e)
+        {
+            mtbAlugado.Text = "";
+            mtbPlaca.Text = "";
+            mtbValorDiaria.Text = "";
+            ltbInfoCarro.Items.Clear();
+            mtbPlaca.Focus();
+        }
+
+        private void btnConsulta_Click(object sender, EventArgs e)
+        {
+            InicializaDBs a = new();
         }
     }
 }

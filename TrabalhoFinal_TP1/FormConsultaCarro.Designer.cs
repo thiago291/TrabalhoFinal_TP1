@@ -36,9 +36,10 @@
             this.lblInfoCarro = new System.Windows.Forms.Label();
             this.ltbInfoCarro = new System.Windows.Forms.ListBox();
             this.lblDiaria = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.mtbValorDiaria = new System.Windows.Forms.MaskedTextBox();
             this.btnNovaConsulta = new System.Windows.Forms.Button();
             this.btnMenu = new System.Windows.Forms.Button();
+            this.btnConsulta = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblCarro
@@ -64,7 +65,7 @@
             this.mtbPlaca.Location = new System.Drawing.Point(6, 107);
             this.mtbPlaca.Mask = "AAA0000";
             this.mtbPlaca.Name = "mtbPlaca";
-            this.mtbPlaca.Size = new System.Drawing.Size(126, 23);
+            this.mtbPlaca.Size = new System.Drawing.Size(69, 23);
             this.mtbPlaca.TabIndex = 2;
             // 
             // lblAlugado
@@ -110,13 +111,13 @@
             this.lblDiaria.TabIndex = 1;
             this.lblDiaria.Text = "Valor da diária do veículo";
             // 
-            // maskedTextBox1
+            // mtbValorDiaria
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(6, 372);
-            this.maskedTextBox1.Mask = "$";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(282, 23);
-            this.maskedTextBox1.TabIndex = 2;
+            this.mtbValorDiaria.Location = new System.Drawing.Point(6, 372);
+            this.mtbValorDiaria.Mask = "$";
+            this.mtbValorDiaria.Name = "mtbValorDiaria";
+            this.mtbValorDiaria.Size = new System.Drawing.Size(282, 23);
+            this.mtbValorDiaria.TabIndex = 2;
             // 
             // btnNovaConsulta
             // 
@@ -126,6 +127,7 @@
             this.btnNovaConsulta.TabIndex = 5;
             this.btnNovaConsulta.Text = "Nova Consulta";
             this.btnNovaConsulta.UseVisualStyleBackColor = true;
+            this.btnNovaConsulta.Click += new System.EventHandler(this.btnNovaConsulta_Click);
             // 
             // btnMenu
             // 
@@ -137,19 +139,30 @@
             this.btnMenu.UseVisualStyleBackColor = true;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
+            // btnConsulta
+            // 
+            this.btnConsulta.Location = new System.Drawing.Point(81, 107);
+            this.btnConsulta.Name = "btnConsulta";
+            this.btnConsulta.Size = new System.Drawing.Size(75, 23);
+            this.btnConsulta.TabIndex = 6;
+            this.btnConsulta.Text = "Consultar";
+            this.btnConsulta.UseVisualStyleBackColor = true;
+            this.btnConsulta.Click += new System.EventHandler(this.btnConsulta_Click);
+            // 
             // FormConsultaCarro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(294, 450);
+            this.Controls.Add(this.btnConsulta);
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.btnNovaConsulta);
             this.Controls.Add(this.ltbInfoCarro);
             this.Controls.Add(this.lblInfoCarro);
             this.Controls.Add(this.mtbAlugado);
             this.Controls.Add(this.lblAlugado);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.mtbValorDiaria);
             this.Controls.Add(this.lblDiaria);
             this.Controls.Add(this.mtbPlaca);
             this.Controls.Add(this.lblPlaca);
@@ -171,8 +184,9 @@
         private Label lblInfoCarro;
         private ListBox ltbInfoCarro;
         private Label lblDiaria;
-        private MaskedTextBox maskedTextBox1;
+        private MaskedTextBox mtbValorDiaria;
         private Button btnNovaConsulta;
         private Button btnMenu;
+        private Button btnConsulta;
     }
 }

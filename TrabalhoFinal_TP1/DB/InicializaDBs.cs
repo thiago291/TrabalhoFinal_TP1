@@ -8,10 +8,12 @@ namespace TrabalhoFinal_TP1.DB
 {
     public class InicializaDBs
     {
+        public List<Pedidos> pedidos = new();
+        public List<Carros> carros = new();
+        public List<Clientes> clientes = new();
         public void db()
         { 
             #region adição de pedidos
-            List<Pedidos> pedidos = new();
             pedidos.Add(new Pedidos(1, 1, "FIK4152", "28695172465", DateTime.Today, DateTime.Today.AddDays(9), 9, 1260));
             pedidos.Add(new Pedidos(2, 10, "FGH5632", "93056380405", DateTime.Today, DateTime.Today.AddDays(4), 4, 400));
             pedidos.Add(new Pedidos(3, 10, "GHJ5258", "62868467431", DateTime.Today, DateTime.Today.AddDays(7), 7, 1050));
@@ -23,7 +25,6 @@ namespace TrabalhoFinal_TP1.DB
             #endregion
 
             #region adição de carros
-            List<Carros> carros = new();
             carros.Add(new Carros("BOL5260", "Fiat/Mobi/Preto/Hatch/1.0/Manual", 70, true));
             carros.Add(new Carros("DFQ4561", "Renault/Kwid/Branco/Hatch/1.0/Manual", 70, true));
             carros.Add(new Carros("ERY7845", "Volkswagen/Gol/Vermelho/Hatch/1.0/Manual", 80, true));
@@ -52,7 +53,6 @@ namespace TrabalhoFinal_TP1.DB
             #endregion
 
             #region adição de clientes
-            List<Clientes> clientes = new();
             clientes.Add(new Clientes("Emanuel Oliver Juan Almeida", "1782037187", "96986279730", "11/01/1963", "emanuel.oliver.almeida@signa.net.br", "44790367423", "M", "Avenida Clodóvio Coelho 220 Casa 1", "Macapá", "AP", "68902885"));
             clientes.Add(new Clientes("Thiago Raul Márcio Viana", "3749777985", "84998384900", "14/06/1977", "thiago_viana@technocut.com.br", "49710877163", "M", "2ª Travessa Presidente Mascarenhas 554 ", "Natal", "RN", "59037545"));
             clientes.Add(new Clientes("Manuel Emanuel Matheus Moreira", "5465803606", "62996877628", "15/02/1983", "manuel.emanuel.moreira@depotit.com.br", "75693788128", "M", "Praça Solon Amaral 718 Apt 204", "Goiânia", "GO", "74323041"));
