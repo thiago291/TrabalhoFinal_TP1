@@ -8,9 +8,9 @@ namespace TrabalhoFinal_TP1.DB
 {
     public class InicializaDBs
     {
-        public List<Pedidos> pedidos = new();
-        public List<Carros> carros = new();
-        public List<Clientes> clientes = new();
+        public static List<Pedidos> pedidos = new();
+        public static List<Carros> carros = new();
+        public static List<Clientes> clientes = new();
         public void db()
         { 
             #region adição de pedidos
@@ -25,30 +25,30 @@ namespace TrabalhoFinal_TP1.DB
             #endregion
 
             #region adição de carros
-            carros.Add(new Carros("BOL5260", "Fiat/Mobi/Preto/Hatch/1.0/Manual", 70, true));
-            carros.Add(new Carros("DFQ4561", "Renault/Kwid/Branco/Hatch/1.0/Manual", 70, true));
+            carros.Add(new Carros("BOL5260", "Fiat/Mobi/Preto/Hatch/1.0/Manual", 70, false));
+            carros.Add(new Carros("DFQ4561", "Renault/Kwid/Branco/Hatch/1.0/Manual", 70, false));
             carros.Add(new Carros("ERY7845", "Volkswagen/Gol/Vermelho/Hatch/1.0/Manual", 80, true));
             carros.Add(new Carros("KBY1264", "Chevrolet/Onix/Preto/Hatch/1.0/Manual", 80, true));
             carros.Add(new Carros("CAR5282", "Fiat/Argo/Prata/Hatch/1.0/Manual", 80, true));
             carros.Add(new Carros("FDA5263", "Peugeot/208/Preto/Hatch/1.0/Manual", 90, true));
             carros.Add(new Carros("BCA4555", "Hyundai/HB20S/Preto/Notch/1.0/Manual", 100, true));
             carros.Add(new Carros("AED1236", "Fiat/Cronos/Vermelho/Notch/1.0/Manual", 100, true));
-            carros.Add(new Carros("CBF7852", "Chevrolet/Onix Plus/Preto/Notch/1.0/Manual", 100, true));
-            carros.Add(new Carros("FGH5632", "Nissan/Versa/Prata/Notch/1.0/Automatico", 100, true));
+            carros.Add(new Carros("CBF7852", "Chevrolet/Onix Plus/Preto/Notch/1.0/Manual", 100, false));
+            carros.Add(new Carros("FGH5632", "Nissan/Versa/Prata/Notch/1.0/Automatico", 100, false));
             carros.Add(new Carros("FRU1630", "Volkswagen/Virtus/Prata/Notch/1.0/Automatico", 100, true));
             carros.Add(new Carros("FGL5263", "Volkswagen/Nivus/Branco/SUV/1.4/Automatico", 110, true));
-            carros.Add(new Carros("GOL4567", "Renault/Duster/Branco/SUV/1.6/Automatico", 110, true));
+            carros.Add(new Carros("GOL4567", "Renault/Duster/Branco/SUV/1.6/Automatico", 110, false));
             carros.Add(new Carros("EVL4512", "Hyundai/Creta/Prata/SUV/1.0/Automatico", 120, true));
             carros.Add(new Carros("BFL2564", "Hyundai/HR-V/Preto/SUV/1.5/Automatico", 120, true));
             carros.Add(new Carros("EXL6590", "Volkswagen/T-Cross/Azul/SUV/1.4/Automatico", 120, true));
             carros.Add(new Carros("DKL3231", "Volkswagen/Taos/Preto/SUV/1.4/Automatico", 130, true));
-            carros.Add(new Carros("FIK4152", "Toyota/Corolla Cross/Cinza/SUV/2.0/Automatico", 140, true));
+            carros.Add(new Carros("FIK4152", "Toyota/Corolla Cross/Cinza/SUV/2.0/Automatico", 140, false));
             carros.Add(new Carros("DXV2548", "Fiat/Strada/Vermelho/Pick-up/1.3/Manual", 80, true));
             carros.Add(new Carros("FVL4590", "Volkswagen/Saveiro/Preto/Pick-up/1.6/Manual", 80, true));
             carros.Add(new Carros("GLN1547", "Fiat/Toro/Vermelho/Pick-up/1.3/Automatico", 120, true));
             carros.Add(new Carros("HBC1211", "Volkswagen/Amarok/Preto/Pick-up/2.0/Automatico", 140, true));
             carros.Add(new Carros("JLO2525", "Chevrolet/Spin/Prata/Minivan/1.8/Automatico", 140, true));
-            carros.Add(new Carros("GHJ5258", "Renault/Zoe/Branco/Hatch//Automatico", 150, true));
+            carros.Add(new Carros("GHJ5258", "Renault/Zoe/Branco/Hatch//Automatico", 150, false));
             carros.Add(new Carros("JLO2321", "Toyota/Corolla Altis/Preto/SUV/1.8/Automatico", 150, true));
             #endregion
 

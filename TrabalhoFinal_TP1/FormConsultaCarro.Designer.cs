@@ -54,7 +54,7 @@
             // lblPlaca
             // 
             this.lblPlaca.AutoSize = true;
-            this.lblPlaca.Location = new System.Drawing.Point(10, 89);
+            this.lblPlaca.Location = new System.Drawing.Point(10, 66);
             this.lblPlaca.Name = "lblPlaca";
             this.lblPlaca.Size = new System.Drawing.Size(35, 15);
             this.lblPlaca.TabIndex = 1;
@@ -62,16 +62,17 @@
             // 
             // mtbPlaca
             // 
-            this.mtbPlaca.Location = new System.Drawing.Point(6, 107);
+            this.mtbPlaca.Location = new System.Drawing.Point(6, 84);
             this.mtbPlaca.Mask = "AAA0000";
             this.mtbPlaca.Name = "mtbPlaca";
+            this.mtbPlaca.PromptChar = ' ';
             this.mtbPlaca.Size = new System.Drawing.Size(69, 23);
             this.mtbPlaca.TabIndex = 2;
             // 
             // lblAlugado
             // 
             this.lblAlugado.AutoSize = true;
-            this.lblAlugado.Location = new System.Drawing.Point(166, 89);
+            this.lblAlugado.Location = new System.Drawing.Point(166, 66);
             this.lblAlugado.Name = "lblAlugado";
             this.lblAlugado.Size = new System.Drawing.Size(52, 15);
             this.lblAlugado.TabIndex = 1;
@@ -79,7 +80,8 @@
             // 
             // mtbAlugado
             // 
-            this.mtbAlugado.Location = new System.Drawing.Point(162, 107);
+            this.mtbAlugado.Enabled = false;
+            this.mtbAlugado.Location = new System.Drawing.Point(162, 84);
             this.mtbAlugado.Name = "mtbAlugado";
             this.mtbAlugado.Size = new System.Drawing.Size(126, 23);
             this.mtbAlugado.TabIndex = 2;
@@ -87,7 +89,7 @@
             // lblInfoCarro
             // 
             this.lblInfoCarro.AutoSize = true;
-            this.lblInfoCarro.Location = new System.Drawing.Point(6, 155);
+            this.lblInfoCarro.Location = new System.Drawing.Point(6, 125);
             this.lblInfoCarro.Name = "lblInfoCarro";
             this.lblInfoCarro.Size = new System.Drawing.Size(131, 15);
             this.lblInfoCarro.TabIndex = 3;
@@ -95,17 +97,18 @@
             // 
             // ltbInfoCarro
             // 
+            this.ltbInfoCarro.Enabled = false;
             this.ltbInfoCarro.FormattingEnabled = true;
             this.ltbInfoCarro.ItemHeight = 15;
-            this.ltbInfoCarro.Location = new System.Drawing.Point(6, 173);
+            this.ltbInfoCarro.Location = new System.Drawing.Point(6, 143);
             this.ltbInfoCarro.Name = "ltbInfoCarro";
-            this.ltbInfoCarro.Size = new System.Drawing.Size(282, 169);
+            this.ltbInfoCarro.Size = new System.Drawing.Size(282, 94);
             this.ltbInfoCarro.TabIndex = 4;
             // 
             // lblDiaria
             // 
             this.lblDiaria.AutoSize = true;
-            this.lblDiaria.Location = new System.Drawing.Point(10, 354);
+            this.lblDiaria.Location = new System.Drawing.Point(6, 254);
             this.lblDiaria.Name = "lblDiaria";
             this.lblDiaria.Size = new System.Drawing.Size(139, 15);
             this.lblDiaria.TabIndex = 1;
@@ -113,15 +116,15 @@
             // 
             // mtbValorDiaria
             // 
-            this.mtbValorDiaria.Location = new System.Drawing.Point(6, 372);
-            this.mtbValorDiaria.Mask = "$";
+            this.mtbValorDiaria.Enabled = false;
+            this.mtbValorDiaria.Location = new System.Drawing.Point(6, 272);
             this.mtbValorDiaria.Name = "mtbValorDiaria";
             this.mtbValorDiaria.Size = new System.Drawing.Size(282, 23);
             this.mtbValorDiaria.TabIndex = 2;
             // 
             // btnNovaConsulta
             // 
-            this.btnNovaConsulta.Location = new System.Drawing.Point(6, 413);
+            this.btnNovaConsulta.Location = new System.Drawing.Point(6, 313);
             this.btnNovaConsulta.Name = "btnNovaConsulta";
             this.btnNovaConsulta.Size = new System.Drawing.Size(103, 24);
             this.btnNovaConsulta.TabIndex = 5;
@@ -131,7 +134,7 @@
             // 
             // btnMenu
             // 
-            this.btnMenu.Location = new System.Drawing.Point(185, 413);
+            this.btnMenu.Location = new System.Drawing.Point(185, 313);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Size = new System.Drawing.Size(103, 24);
             this.btnMenu.TabIndex = 5;
@@ -141,7 +144,7 @@
             // 
             // btnConsulta
             // 
-            this.btnConsulta.Location = new System.Drawing.Point(81, 107);
+            this.btnConsulta.Location = new System.Drawing.Point(81, 84);
             this.btnConsulta.Name = "btnConsulta";
             this.btnConsulta.Size = new System.Drawing.Size(75, 23);
             this.btnConsulta.TabIndex = 6;
@@ -154,7 +157,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(294, 450);
+            this.ClientSize = new System.Drawing.Size(294, 347);
             this.Controls.Add(this.btnConsulta);
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.btnNovaConsulta);
@@ -167,8 +170,13 @@
             this.Controls.Add(this.mtbPlaca);
             this.Controls.Add(this.lblPlaca);
             this.Controls.Add(this.lblCarro);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormConsultaCarro";
-            this.Text = "FormConsultaCarro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Consulta de carros";
+            this.Load += new System.EventHandler(this.FormConsultaCarro_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -11,7 +11,7 @@ namespace TrabalhoFinal_TP1
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            DB.InicializaDBs db = new DB.InicializaDBs();
+            DB.InicializaDBs db = new();
             db.db();
             Application.Run(new FormMenuPrincipal());
         }
