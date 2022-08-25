@@ -135,6 +135,7 @@
             this.btnMenu.TabIndex = 5;
             this.btnMenu.Text = "Voltar ao Menu";
             this.btnMenu.UseVisualStyleBackColor = true;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // FormConsultaCarro
             // 

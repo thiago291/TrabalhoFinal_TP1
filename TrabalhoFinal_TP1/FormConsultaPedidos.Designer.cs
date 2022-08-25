@@ -199,6 +199,7 @@
             this.btnVoltar.TabIndex = 28;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // btnDelete
             // 

@@ -17,6 +17,9 @@ namespace TrabalhoFinal_TP1
             InitializeComponent();
         }
 
-       
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
