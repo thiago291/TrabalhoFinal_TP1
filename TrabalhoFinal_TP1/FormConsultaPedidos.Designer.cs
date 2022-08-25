@@ -47,6 +47,8 @@
             this.btnNovaConsulta = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.btnConsulta = new System.Windows.Forms.Button();
+            this.btnCons = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblCodPed
@@ -64,7 +66,8 @@
             this.mtbNumPedido.Location = new System.Drawing.Point(7, 56);
             this.mtbNumPedido.Mask = "00000";
             this.mtbNumPedido.Name = "mtbNumPedido";
-            this.mtbNumPedido.Size = new System.Drawing.Size(255, 23);
+            this.mtbNumPedido.PromptChar = ' ';
+            this.mtbNumPedido.Size = new System.Drawing.Size(122, 23);
             this.mtbNumPedido.TabIndex = 1;
             // 
             // mtbDataRetorno
@@ -210,11 +213,31 @@
             this.btnDelete.Text = "Excluir Pedido";
             this.btnDelete.UseVisualStyleBackColor = true;
             // 
+            // btnConsulta
+            // 
+            this.btnConsulta.Location = new System.Drawing.Point(135, 57);
+            this.btnConsulta.Name = "btnConsulta";
+            this.btnConsulta.Size = new System.Drawing.Size(122, 22);
+            this.btnConsulta.TabIndex = 29;
+            this.btnConsulta.Text = "Consulta";
+            this.btnConsulta.UseVisualStyleBackColor = true;
+            // 
+            // btnCons
+            // 
+            this.btnCons.Location = new System.Drawing.Point(135, 57);
+            this.btnCons.Name = "btnCons";
+            this.btnCons.Size = new System.Drawing.Size(122, 22);
+            this.btnCons.TabIndex = 29;
+            this.btnCons.Text = "Consulta";
+            this.btnCons.UseVisualStyleBackColor = true;
+            this.btnCons.Click += new System.EventHandler(this.btnCons_Click);
+            // 
             // FormConsultaPedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(274, 479);
+            this.ClientSize = new System.Drawing.Size(274, 475);
+            this.Controls.Add(this.btnCons);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnNovaConsulta);
@@ -262,5 +285,7 @@
         private Button btnNovaConsulta;
         private Button btnVoltar;
         private Button btnDelete;
+        private Button btnConsulta;
+        private Button btnCons;
     }
 }
