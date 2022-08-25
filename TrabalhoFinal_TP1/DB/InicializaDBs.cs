@@ -53,14 +53,14 @@ namespace TrabalhoFinal_TP1.DB
             #endregion
 
             #region adição de clientes
-            clientes.Add(new Clientes("Emanuel Oliver Juan Almeida", "1782037187", "96986279730", "11/01/1963", "emanuel.oliver.almeida@signa.net.br", "44790367423", "M", "Avenida Clodóvio Coelho/220/Casa 1", "Macapá", "AP", "68902885"));
-            clientes.Add(new Clientes("Thiago Raul Márcio Viana", "3749777985", "84998384900", "14/06/1977", "thiago_viana@technocut.com.br", "49710877163", "M", "2ª Travessa Presidente Mascarenhas/554/ ", "Natal", "RN", "59037545"));
-            clientes.Add(new Clientes("Manuel Emanuel Matheus Moreira", "5465803606", "62996877628", "15/02/1983", "manuel.emanuel.moreira@depotit.com.br", "75693788128", "M", "Praça Solon Amaral/718/Apt 204", "Goiânia", "GO", "74323041"));
-            clientes.Add(new Clientes("Enrico Martin Moreira", "5930942803", "51992072315", "05/01/1988", "enrico.martin.moreira@metododerose.org", "88717396917", "M", "Rua Campo Verde/558/ ", "Sapucaia do Sul", "RS", "93224400"));
-            clientes.Add(new Clientes("Mariah Patrícia Carvalho", "7045527284", "84992942831", "01/08/1966", "mariah_carvalho@monetto.com.br", "21982382684", "F", "Rua São Bernardo II/474/ ", "Parnamirim", "RN", "59148405"));
-            clientes.Add(new Clientes("Arthur Emanuel Lucca da Mota", "7274162276", "71986274722", "27/02/2002", "arthur_emanuel_damota@poli.ufrj.br", "21269624849", "M", "Rua Major Câmara/212/Casa 1", "Salvador", "BA", "40250410"));
-            clientes.Add(new Clientes("Ayla Cláudia Melo", "8949350971", "65984820585", "23/05/1994", "ayla.claudia.melo@umbernardo.com.br", "82143476287", "F", "Rua F/271/Apt 706", "Cuiabá", "MT", "78048735"));
-            clientes.Add(new Clientes("Luiza Maria da Cunha", "9260353556", "93989051104", "23/07/1980", "luiza_maria_dacunha@tvglobo.com.br", "33321229520", "F", "Rua Carlos Chagas/429/Casa 1", "Santarém", "PA", "68025090"));
+            clientes.Add(new Clientes("Emanuel Oliver Juan Almeida", "01782037187", "96986279730", "11/01/1963", "emanuel.oliver.almeida@signa.net.br", "44790367423", "M", "Avenida Clodóvio Coelho/220/Casa 1", "Macapá", "AP", "68902885"));
+            clientes.Add(new Clientes("Thiago Raul Márcio Viana", "03749777985", "84998384900", "14/06/1977", "thiago_viana@technocut.com.br", "49710877163", "M", "2ª Travessa Presidente Mascarenhas/554/ ", "Natal", "RN", "59037545"));
+            clientes.Add(new Clientes("Manuel Emanuel Matheus Moreira", "54658003606", "62996877628", "15/02/1983", "manuel.emanuel.moreira@depotit.com.br", "75693788128", "M", "Praça Solon Amaral/718/Apt 204", "Goiânia", "GO", "74323041"));
+            clientes.Add(new Clientes("Enrico Martin Moreira", "59030942803", "51992072315", "05/01/1988", "enrico.martin.moreira@metododerose.org", "88717396917", "M", "Rua Campo Verde/558/ ", "Sapucaia do Sul", "RS", "93224400"));
+            clientes.Add(new Clientes("Mariah Patrícia Carvalho", "70450527284", "84992942831", "01/08/1966", "mariah_carvalho@monetto.com.br", "21982382684", "F", "Rua São Bernardo II/474/ ", "Parnamirim", "RN", "59148405"));
+            clientes.Add(new Clientes("Arthur Emanuel Lucca da Mota", "72074162276", "71986274722", "27/02/2002", "arthur_emanuel_damota@poli.ufrj.br", "21269624849", "M", "Rua Major Câmara/212/Casa 1", "Salvador", "BA", "40250410"));
+            clientes.Add(new Clientes("Ayla Cláudia Melo", "89493500971", "65984820585", "23/05/1994", "ayla.claudia.melo@umbernardo.com.br", "82143476287", "F", "Rua F/271/Apt 706", "Cuiabá", "MT", "78048735"));
+            clientes.Add(new Clientes("Luiza Maria da Cunha", "92600353556", "93989051104", "23/07/1980", "luiza_maria_dacunha@tvglobo.com.br", "33321229520", "F", "Rua Carlos Chagas/429/Casa 1", "Santarém", "PA", "68025090"));
             clientes.Add(new Clientes("Manoel Diego Fogaça", "11856149072", "28992580556", "22/02/1998", "manoel_fogaca@maccropropaganda.com.br", "63000148240", "M", "Rua Nossa Senhora de Fátima/269/Casa 2", "Cachoeiro de Itapemirim", "ES", "29308650"));
             clientes.Add(new Clientes("Marina Fabiana Caroline da Luz", "12954792574", "92998340736", "10/05/1967", "marina_daluz@elevaconsultancy.com.br", "78537337294", "F", "Rua Ducamara/545/ ", "Manaus", "AM", "69092305"));
             clientes.Add(new Clientes("Teresinha Julia Priscila Pereira", "21675830100", "61996531868", "05/06/1956", "teresinha_julia_pereira@htmail.com", "64553309788", "F", "Quadra CLN 411 Bloco B/409/Casa 2", "Brasília", "DF", "70866520"));
