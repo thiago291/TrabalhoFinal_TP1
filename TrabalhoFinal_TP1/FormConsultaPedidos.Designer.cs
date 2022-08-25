@@ -65,7 +65,6 @@
             // mtbNumPedido
             // 
             this.mtbNumPedido.Location = new System.Drawing.Point(7, 56);
-            this.mtbNumPedido.Mask = "00000";
             this.mtbNumPedido.Name = "mtbNumPedido";
             this.mtbNumPedido.PromptChar = ' ';
             this.mtbNumPedido.Size = new System.Drawing.Size(122, 23);
@@ -283,6 +282,7 @@
             this.Name = "FormConsultaPedidos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta Pedidos";
+            this.Load += new System.EventHandler(this.FormConsultaPedidos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
