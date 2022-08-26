@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPedidos));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,6 +47,8 @@
             this.lblIDValido = new System.Windows.Forms.Label();
             this.mtbDiarias = new System.Windows.Forms.MaskedTextBox();
             this.dtpAluguel = new System.Windows.Forms.DateTimePicker();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -121,22 +124,26 @@
             // 
             // btnConfirmar
             // 
+            this.btnConfirmar.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnConfirmar.ForeColor = System.Drawing.Color.White;
             this.btnConfirmar.Location = new System.Drawing.Point(171, 354);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(95, 25);
             this.btnConfirmar.TabIndex = 5;
             this.btnConfirmar.Text = "Confirmar";
-            this.btnConfirmar.UseVisualStyleBackColor = true;
+            this.btnConfirmar.UseVisualStyleBackColor = false;
             this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
             // btnVoltar
             // 
+            this.btnVoltar.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnVoltar.ForeColor = System.Drawing.Color.White;
             this.btnVoltar.Location = new System.Drawing.Point(11, 354);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(95, 25);
             this.btnVoltar.TabIndex = 6;
             this.btnVoltar.Text = "Voltar";
-            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // mtb_CPF
@@ -212,11 +219,25 @@
             this.dtpAluguel.TabIndex = 3;
             this.dtpAluguel.Value = new System.DateTime(2022, 8, 25, 18, 25, 50, 0);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Enabled = false;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(171, 7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(103, 49);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 37;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormPedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(282, 387);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dtpAluguel);
             this.Controls.Add(this.mtbDiarias);
             this.Controls.Add(this.lblIDValido);
@@ -236,10 +257,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormPedidos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormPedidos";
             this.Load += new System.EventHandler(this.FormPedidos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -264,5 +287,6 @@
         private Label lblIDValido;
         private MaskedTextBox mtbDiarias;
         private DateTimePicker dtpAluguel;
+        private PictureBox pictureBox1;
     }
 }

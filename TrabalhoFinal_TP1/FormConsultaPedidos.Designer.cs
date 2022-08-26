@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormConsultaPedidos));
             this.lblCodPed = new System.Windows.Forms.Label();
             this.mtbNumPedido = new System.Windows.Forms.MaskedTextBox();
             this.mtbDataRetorno = new System.Windows.Forms.MaskedTextBox();
@@ -50,6 +51,8 @@
             this.btnConsulta = new System.Windows.Forms.Button();
             this.btnCons = new System.Windows.Forms.Button();
             this.lblAviso = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCodPed
@@ -57,14 +60,14 @@
             this.lblCodPed.AutoSize = true;
             this.lblCodPed.Location = new System.Drawing.Point(7, 8);
             this.lblCodPed.Name = "lblCodPed";
-            this.lblCodPed.Size = new System.Drawing.Size(122, 45);
+            this.lblCodPed.Size = new System.Drawing.Size(122, 75);
             this.lblCodPed.TabIndex = 0;
-            this.lblCodPed.Text = "CONSULTA PEDIDOS\r\n\r\nInsira o Nº do pedido:";
+            this.lblCodPed.Text = "CONSULTA PEDIDOS\r\n\r\n\r\n\r\nInsira o Nº do pedido:";
             this.lblCodPed.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // mtbNumPedido
             // 
-            this.mtbNumPedido.Location = new System.Drawing.Point(7, 56);
+            this.mtbNumPedido.Location = new System.Drawing.Point(10, 84);
             this.mtbNumPedido.Name = "mtbNumPedido";
             this.mtbNumPedido.PromptChar = ' ';
             this.mtbNumPedido.Size = new System.Drawing.Size(122, 23);
@@ -73,7 +76,7 @@
             // mtbDataRetorno
             // 
             this.mtbDataRetorno.Enabled = false;
-            this.mtbDataRetorno.Location = new System.Drawing.Point(7, 317);
+            this.mtbDataRetorno.Location = new System.Drawing.Point(10, 345);
             this.mtbDataRetorno.Name = "mtbDataRetorno";
             this.mtbDataRetorno.ReadOnly = true;
             this.mtbDataRetorno.Size = new System.Drawing.Size(255, 23);
@@ -82,7 +85,7 @@
             // mtbDataAluguel
             // 
             this.mtbDataAluguel.Enabled = false;
-            this.mtbDataAluguel.Location = new System.Drawing.Point(7, 268);
+            this.mtbDataAluguel.Location = new System.Drawing.Point(10, 296);
             this.mtbDataAluguel.Name = "mtbDataAluguel";
             this.mtbDataAluguel.ReadOnly = true;
             this.mtbDataAluguel.Size = new System.Drawing.Size(255, 23);
@@ -91,7 +94,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(7, 343);
+            this.label6.Location = new System.Drawing.Point(10, 371);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(107, 15);
             this.label6.TabIndex = 25;
@@ -100,7 +103,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 299);
+            this.label5.Location = new System.Drawing.Point(9, 327);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(92, 15);
             this.label5.TabIndex = 24;
@@ -109,7 +112,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 250);
+            this.label4.Location = new System.Drawing.Point(10, 278);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(92, 15);
             this.label4.TabIndex = 23;
@@ -118,7 +121,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 206);
+            this.label3.Location = new System.Drawing.Point(9, 234);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(86, 15);
             this.label3.TabIndex = 22;
@@ -127,7 +130,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 162);
+            this.label2.Location = new System.Drawing.Point(10, 190);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 15);
             this.label2.TabIndex = 21;
@@ -136,7 +139,7 @@
             // lblIdAtend
             // 
             this.lblIdAtend.AutoSize = true;
-            this.lblIdAtend.Location = new System.Drawing.Point(7, 118);
+            this.lblIdAtend.Location = new System.Drawing.Point(10, 146);
             this.lblIdAtend.Name = "lblIdAtend";
             this.lblIdAtend.Size = new System.Drawing.Size(94, 15);
             this.lblIdAtend.TabIndex = 20;
@@ -145,7 +148,7 @@
             // txb_Nº_Diarias
             // 
             this.txb_Nº_Diarias.Enabled = false;
-            this.txb_Nº_Diarias.Location = new System.Drawing.Point(7, 361);
+            this.txb_Nº_Diarias.Location = new System.Drawing.Point(10, 389);
             this.txb_Nº_Diarias.Name = "txb_Nº_Diarias";
             this.txb_Nº_Diarias.ReadOnly = true;
             this.txb_Nº_Diarias.Size = new System.Drawing.Size(255, 23);
@@ -154,7 +157,7 @@
             // txb_CPF
             // 
             this.txb_CPF.Enabled = false;
-            this.txb_CPF.Location = new System.Drawing.Point(7, 224);
+            this.txb_CPF.Location = new System.Drawing.Point(10, 252);
             this.txb_CPF.Name = "txb_CPF";
             this.txb_CPF.ReadOnly = true;
             this.txb_CPF.Size = new System.Drawing.Size(255, 23);
@@ -163,7 +166,7 @@
             // txb_ID_Atendente
             // 
             this.txb_ID_Atendente.Enabled = false;
-            this.txb_ID_Atendente.Location = new System.Drawing.Point(7, 136);
+            this.txb_ID_Atendente.Location = new System.Drawing.Point(10, 164);
             this.txb_ID_Atendente.Name = "txb_ID_Atendente";
             this.txb_ID_Atendente.ReadOnly = true;
             this.txb_ID_Atendente.Size = new System.Drawing.Size(255, 23);
@@ -172,7 +175,7 @@
             // lblValorTotal
             // 
             this.lblValorTotal.AutoSize = true;
-            this.lblValorTotal.Location = new System.Drawing.Point(7, 388);
+            this.lblValorTotal.Location = new System.Drawing.Point(10, 416);
             this.lblValorTotal.Name = "lblValorTotal";
             this.lblValorTotal.Size = new System.Drawing.Size(61, 15);
             this.lblValorTotal.TabIndex = 25;
@@ -181,7 +184,7 @@
             // txb_Placa_Carro
             // 
             this.txb_Placa_Carro.Enabled = false;
-            this.txb_Placa_Carro.Location = new System.Drawing.Point(7, 180);
+            this.txb_Placa_Carro.Location = new System.Drawing.Point(10, 208);
             this.txb_Placa_Carro.Name = "txb_Placa_Carro";
             this.txb_Placa_Carro.ReadOnly = true;
             this.txb_Placa_Carro.Size = new System.Drawing.Size(255, 23);
@@ -190,7 +193,7 @@
             // mtb_Valor_Total
             // 
             this.mtb_Valor_Total.Enabled = false;
-            this.mtb_Valor_Total.Location = new System.Drawing.Point(7, 406);
+            this.mtb_Valor_Total.Location = new System.Drawing.Point(10, 434);
             this.mtb_Valor_Total.Name = "mtb_Valor_Total";
             this.mtb_Valor_Total.ReadOnly = true;
             this.mtb_Valor_Total.Size = new System.Drawing.Size(255, 23);
@@ -198,32 +201,38 @@
             // 
             // btnNovaConsulta
             // 
-            this.btnNovaConsulta.Location = new System.Drawing.Point(7, 450);
+            this.btnNovaConsulta.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnNovaConsulta.ForeColor = System.Drawing.Color.White;
+            this.btnNovaConsulta.Location = new System.Drawing.Point(10, 478);
             this.btnNovaConsulta.Name = "btnNovaConsulta";
             this.btnNovaConsulta.Size = new System.Drawing.Size(122, 22);
             this.btnNovaConsulta.TabIndex = 28;
             this.btnNovaConsulta.Text = "Nova Consulta";
-            this.btnNovaConsulta.UseVisualStyleBackColor = true;
+            this.btnNovaConsulta.UseVisualStyleBackColor = false;
             this.btnNovaConsulta.Click += new System.EventHandler(this.btnNovaConsulta_Click);
             // 
             // btnVoltar
             // 
-            this.btnVoltar.Location = new System.Drawing.Point(75, 478);
+            this.btnVoltar.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnVoltar.ForeColor = System.Drawing.Color.White;
+            this.btnVoltar.Location = new System.Drawing.Point(78, 506);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(122, 22);
             this.btnVoltar.TabIndex = 28;
             this.btnVoltar.Text = "Voltar";
-            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(140, 450);
+            this.btnDelete.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.Location = new System.Drawing.Point(143, 478);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(122, 22);
             this.btnDelete.TabIndex = 28;
             this.btnDelete.Text = "Excluir Pedido";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnConsulta
@@ -237,26 +246,42 @@
             // 
             // btnCons
             // 
-            this.btnCons.Location = new System.Drawing.Point(135, 57);
+            this.btnCons.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnCons.ForeColor = System.Drawing.Color.White;
+            this.btnCons.Location = new System.Drawing.Point(138, 85);
             this.btnCons.Name = "btnCons";
             this.btnCons.Size = new System.Drawing.Size(122, 22);
             this.btnCons.TabIndex = 29;
             this.btnCons.Text = "Consulta";
-            this.btnCons.UseVisualStyleBackColor = true;
+            this.btnCons.UseVisualStyleBackColor = false;
             this.btnCons.Click += new System.EventHandler(this.btnCons_Click);
             // 
             // lblAviso
             // 
-            this.lblAviso.Location = new System.Drawing.Point(7, 82);
+            this.lblAviso.Location = new System.Drawing.Point(10, 110);
             this.lblAviso.Name = "lblAviso";
             this.lblAviso.Size = new System.Drawing.Size(122, 36);
             this.lblAviso.TabIndex = 30;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Enabled = false;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(125, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(147, 53);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 31;
+            this.pictureBox1.TabStop = false;
             // 
             // FormConsultaPedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(274, 515);
+            this.BackColor = System.Drawing.Color.LightGray;
+            this.ClientSize = new System.Drawing.Size(274, 530);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblAviso);
             this.Controls.Add(this.btnCons);
             this.Controls.Add(this.btnDelete);
@@ -279,10 +304,12 @@
             this.Controls.Add(this.mtbNumPedido);
             this.Controls.Add(this.lblCodPed);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormConsultaPedidos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta Pedidos";
             this.Load += new System.EventHandler(this.FormConsultaPedidos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -312,5 +339,6 @@
         private Button btnConsulta;
         private Button btnCons;
         private Label lblAviso;
+        private PictureBox pictureBox1;
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCadastroCliente));
             this.lblDadosPessoais = new System.Windows.Forms.Label();
             this.lblNomeCli = new System.Windows.Forms.Label();
             this.mtbNomeCli = new System.Windows.Forms.MaskedTextBox();
@@ -60,6 +61,8 @@
             this.btnLimpar = new System.Windows.Forms.Button();
             this.mtbGenero = new System.Windows.Forms.MaskedTextBox();
             this.lblGen = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblDadosPessoais
@@ -295,42 +298,50 @@
             // 
             // btnBusca
             // 
+            this.btnBusca.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnBusca.ForeColor = System.Drawing.Color.White;
             this.btnBusca.Location = new System.Drawing.Point(139, 56);
             this.btnBusca.Name = "btnBusca";
             this.btnBusca.Size = new System.Drawing.Size(70, 23);
             this.btnBusca.TabIndex = 1;
             this.btnBusca.Text = "Buscar";
-            this.btnBusca.UseVisualStyleBackColor = true;
+            this.btnBusca.UseVisualStyleBackColor = false;
             this.btnBusca.Click += new System.EventHandler(this.btnBusca_Click);
             // 
             // btnVoltar
             // 
+            this.btnVoltar.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnVoltar.ForeColor = System.Drawing.Color.White;
             this.btnVoltar.Location = new System.Drawing.Point(345, 335);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(101, 24);
             this.btnVoltar.TabIndex = 16;
             this.btnVoltar.Text = "Voltar";
-            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // btnConfirmar
             // 
+            this.btnConfirmar.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnConfirmar.ForeColor = System.Drawing.Color.White;
             this.btnConfirmar.Location = new System.Drawing.Point(131, 336);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(101, 24);
             this.btnConfirmar.TabIndex = 14;
             this.btnConfirmar.Text = "Confirmar";
-            this.btnConfirmar.UseVisualStyleBackColor = true;
+            this.btnConfirmar.UseVisualStyleBackColor = false;
             this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
             // btnLimpar
             // 
+            this.btnLimpar.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnLimpar.ForeColor = System.Drawing.Color.White;
             this.btnLimpar.Location = new System.Drawing.Point(238, 336);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(101, 23);
             this.btnLimpar.TabIndex = 15;
             this.btnLimpar.Text = "Nova consulta";
-            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.UseVisualStyleBackColor = false;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // mtbGenero
@@ -351,11 +362,25 @@
             this.lblGen.TabIndex = 6;
             this.lblGen.Text = "Gênero";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Enabled = false;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(261, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(186, 56);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
+            // 
             // FormCadastroCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(459, 365);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.mtbGenero);
             this.Controls.Add(this.lblGen);
             this.Controls.Add(this.btnLimpar);
@@ -389,10 +414,12 @@
             this.Controls.Add(this.lblEndereçoCli);
             this.Controls.Add(this.lblDadosPessoais);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormCadastroCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Let\'s Drive - CADASTRO CLIENTE";
             this.Load += new System.EventHandler(this.FormCadastroCliente_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -432,5 +459,6 @@
         private Button btnLimpar;
         private MaskedTextBox mtbGenero;
         private Label lblGen;
+        private PictureBox pictureBox1;
     }
 }

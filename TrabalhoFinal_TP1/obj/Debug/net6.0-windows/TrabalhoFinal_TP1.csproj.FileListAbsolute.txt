@@ -60,3 +60,4 @@ H:\github\TrabalhoFinal_TP1\TrabalhoFinal_TP1\obj\Debug\net6.0-windows\TrabalhoF
 H:\github\TrabalhoFinal_TP1\TrabalhoFinal_TP1\obj\Debug\net6.0-windows\TrabalhoFinal_TP1.FormConsultaCarro.resources
 H:\github\TrabalhoFinal_TP1\TrabalhoFinal_TP1\obj\Debug\net6.0-windows\TrabalhoFinal_TP1.FormConsultaPedidos.resources
 H:\github\TrabalhoFinal_TP1\TrabalhoFinal_TP1\obj\Debug\net6.0-windows\TrabalhoFinal_TP1.FormSobre.resources
+C:\Users\fabio\Source\Repos\TrabalhoFinal_TP1\TrabalhoFinal_TP1\obj\Debug\net6.0-windows\TrabalhoFinal_TP1.Properties.Resources.resources
