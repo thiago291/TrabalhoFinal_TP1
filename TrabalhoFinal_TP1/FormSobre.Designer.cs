@@ -34,9 +34,10 @@
             // 
             // label1
             // 
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(12, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(285, 121);
+            this.label1.Size = new System.Drawing.Size(285, 140);
             this.label1.TabIndex = 0;
             this.label1.Text = "Projeto de Final de Módulo Técnicas de Programação #1\r\n\r\nLet\'s Drive - Aluguel de" +
     " Carros\r\n\r\nIntegrantes: \r\nMarcus Pinto\r\nThiago Costa";
@@ -57,7 +58,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(309, 206);
+            this.ClientSize = new System.Drawing.Size(309, 211);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
