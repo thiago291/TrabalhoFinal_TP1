@@ -43,7 +43,9 @@ namespace TrabalhoFinal_TP1
 
         private void btnSair_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult dr = MessageBox.Show("Quer mesmo sair do programa?", "Atenção", MessageBoxButtons.YesNo);
+            if (dr == DialogResult.Yes)
+                this.Close();
         }
 
         private void FormMenuPrincipal_Load(object sender, EventArgs e)

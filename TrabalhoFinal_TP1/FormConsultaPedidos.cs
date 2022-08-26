@@ -66,7 +66,8 @@ namespace TrabalhoFinal_TP1
 
                 lblAviso.Text = "Busca concluída!";
                 lblAviso.ForeColor = Color.Green;
-
+                btnDelete.Enabled = true;
+                btnNovaConsulta.Enabled = true;
             }
         }
 
@@ -83,7 +84,10 @@ namespace TrabalhoFinal_TP1
             txb_Nº_Diarias.Clear();
             mtb_Valor_Total.Clear();
             btnCons.Enabled = true;
-            mtbNumPedido.Enabled = true;
+            mtbNumPedido.ReadOnly = false;
+            btnNovaConsulta.Enabled = false;
+            btnDelete.Enabled = false;
+            mtbNumPedido.Focus();
         }
 
         private async void btnDelete_Click(object sender, EventArgs e)
@@ -94,7 +98,13 @@ namespace TrabalhoFinal_TP1
             InicializaDBs.pedidos.RemoveAt(InicializaDBs.pedidos.FindIndex(c => c.Cod_Pedido == int.Parse(mtbNumPedido.Text)));
             lblAviso.Text = "Pedido excluído!";
             lblAviso.ForeColor = Color.Green;
+            btnDelete.Enabled = false;
+        }
 
+        private void FormConsultaPedidos_Load(object sender, EventArgs e)
+        {
+            btnDelete.Enabled = false;
+            btnNovaConsulta.Enabled = false;
         }
     }
 }

@@ -282,6 +282,7 @@
             this.Name = "FormConsultaPedidos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consulta Pedidos";
+            this.Load += new System.EventHandler(this.FormConsultaPedidos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
