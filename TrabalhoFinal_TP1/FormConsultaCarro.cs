@@ -14,7 +14,7 @@ namespace TrabalhoFinal_TP1
     public partial class FormConsultaCarro : Form
     {
         InicializaDBs db = new();
-        
+
         public FormConsultaCarro()
         {
             InitializeComponent();
@@ -49,7 +49,7 @@ namespace TrabalhoFinal_TP1
             else
             {
                 Carros c = InicializaDBs.carros.Find(x => x.Placa == mtbPlaca.Text.ToUpper());
-                
+
                 if (c.Disponibilidade)
                     mtbAlugado.Text = "Não";
                 else
