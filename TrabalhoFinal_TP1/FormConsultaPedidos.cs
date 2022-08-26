@@ -83,6 +83,7 @@ namespace TrabalhoFinal_TP1
             txb_Nº_Diarias.Clear();
             mtb_Valor_Total.Clear();
             btnCons.Enabled = true;
+            mtbNumPedido.Enabled = true;
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
