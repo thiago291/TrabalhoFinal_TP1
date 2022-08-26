@@ -68,7 +68,7 @@
             this.mtbPlaca.PromptChar = ' ';
             this.mtbPlaca.Size = new System.Drawing.Size(69, 23);
             this.mtbPlaca.TabIndex = 2;
-           
+            // 
             // lblAlugado
             // 
             this.lblAlugado.AutoSize = true;
@@ -156,7 +156,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(294, 347);
             this.Controls.Add(this.btnConsulta);
             this.Controls.Add(this.btnMenu);

@@ -85,9 +85,14 @@ namespace TrabalhoFinal_TP1
             btnCons.Enabled = true;
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
+        private async void btnDelete_Click(object sender, EventArgs e)
         {
-            Pedidos p = InicializaDBs.pedidos.Find(ped => ped.Cod_Pedido == int.Parse(mtbNumPedido.Text));
+            lblAviso.ForeColor = Color.Red;
+            lblAviso.Text = "Excluindo pedido, por favor aguarde...";
+            await Task.Delay(TimeSpan.FromSeconds(2));
+            InicializaDBs.pedidos.RemoveAt(InicializaDBs.pedidos.FindIndex(c => c.Cod_Pedido == int.Parse(mtbNumPedido.Text)));
+            lblAviso.Text = "Pedido excluído!";
+            lblAviso.ForeColor = Color.Green;
 
         }
     }
