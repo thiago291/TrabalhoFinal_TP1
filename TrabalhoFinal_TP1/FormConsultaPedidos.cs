@@ -30,7 +30,7 @@ namespace TrabalhoFinal_TP1
 
         private async void btnCons_Click(object sender, EventArgs e)
         {
-            
+           
             btnCons.Enabled = false;
             mtbNumPedido.ReadOnly = true;
             
@@ -66,6 +66,7 @@ namespace TrabalhoFinal_TP1
 
                 lblAviso.Text = "Busca concluída!";
                 lblAviso.ForeColor = Color.Green;
+
 
             }
         }

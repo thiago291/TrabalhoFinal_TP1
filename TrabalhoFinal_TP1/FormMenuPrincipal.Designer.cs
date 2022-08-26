@@ -118,7 +118,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(270, 325);
+            this.BackColor = System.Drawing.Color.Gainsboro;
+            this.ClientSize = new System.Drawing.Size(317, 368);
             this.Controls.Add(this.btnConsultaPedido);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSair);
