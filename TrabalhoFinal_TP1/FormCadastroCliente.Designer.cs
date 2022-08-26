@@ -99,11 +99,12 @@
             // 
             // mtbCpfCli
             // 
-            this.mtbCpfCli.Location = new System.Drawing.Point(12, 56);
+            this.mtbCpfCli.Location = new System.Drawing.Point(7, 56);
             this.mtbCpfCli.Mask = "00000000000";
             this.mtbCpfCli.Name = "mtbCpfCli";
+            this.mtbCpfCli.PromptChar = ' ';
             this.mtbCpfCli.Size = new System.Drawing.Size(126, 23);
-            this.mtbCpfCli.TabIndex = 2;
+            this.mtbCpfCli.TabIndex = 0;
             // 
             // lblCelCli
             // 
@@ -121,7 +122,7 @@
             this.mtbCelCli.Mask = "(00) 00000-0000";
             this.mtbCelCli.Name = "mtbCelCli";
             this.mtbCelCli.Size = new System.Drawing.Size(126, 23);
-            this.mtbCelCli.TabIndex = 2;
+            this.mtbCelCli.TabIndex = 3;
             // 
             // lblDataNascCli
             // 
@@ -139,7 +140,7 @@
             this.mtbDataNascCli.Mask = "00/00/0000";
             this.mtbDataNascCli.Name = "mtbDataNascCli";
             this.mtbDataNascCli.Size = new System.Drawing.Size(126, 23);
-            this.mtbDataNascCli.TabIndex = 2;
+            this.mtbDataNascCli.TabIndex = 4;
             this.mtbDataNascCli.ValidatingType = typeof(System.DateTime);
             // 
             // lblEmailCli
@@ -157,7 +158,7 @@
             this.mtbEmailCli.Location = new System.Drawing.Point(7, 159);
             this.mtbEmailCli.Name = "mtbEmailCli";
             this.mtbEmailCli.Size = new System.Drawing.Size(175, 23);
-            this.mtbEmailCli.TabIndex = 2;
+            this.mtbEmailCli.TabIndex = 5;
             // 
             // lblCnhCli
             // 
@@ -175,7 +176,7 @@
             this.mtbCnhCli.Mask = "00000000000";
             this.mtbCnhCli.Name = "mtbCnhCli";
             this.mtbCnhCli.Size = new System.Drawing.Size(126, 23);
-            this.mtbCnhCli.TabIndex = 2;
+            this.mtbCnhCli.TabIndex = 6;
             // 
             // lblEndereçoCli
             // 
@@ -200,13 +201,13 @@
             this.mtbRuaCli.Enabled = false;
             this.mtbRuaCli.Location = new System.Drawing.Point(7, 258);
             this.mtbRuaCli.Name = "mtbRuaCli";
-            this.mtbRuaCli.Size = new System.Drawing.Size(175, 23);
-            this.mtbRuaCli.TabIndex = 2;
+            this.mtbRuaCli.Size = new System.Drawing.Size(307, 23);
+            this.mtbRuaCli.TabIndex = 8;
             // 
             // lblNumCli
             // 
             this.lblNumCli.AutoSize = true;
-            this.lblNumCli.Location = new System.Drawing.Point(188, 240);
+            this.lblNumCli.Location = new System.Drawing.Point(320, 240);
             this.lblNumCli.Name = "lblNumCli";
             this.lblNumCli.Size = new System.Drawing.Size(21, 15);
             this.lblNumCli.TabIndex = 1;
@@ -215,11 +216,11 @@
             // mtbNumCli
             // 
             this.mtbNumCli.Enabled = false;
-            this.mtbNumCli.Location = new System.Drawing.Point(188, 258);
+            this.mtbNumCli.Location = new System.Drawing.Point(320, 258);
             this.mtbNumCli.Mask = "00000";
             this.mtbNumCli.Name = "mtbNumCli";
             this.mtbNumCli.Size = new System.Drawing.Size(33, 23);
-            this.mtbNumCli.TabIndex = 2;
+            this.mtbNumCli.TabIndex = 9;
             this.mtbNumCli.ValidatingType = typeof(int);
             // 
             // lblCidadeCli
@@ -236,13 +237,13 @@
             this.mtbCidadeCli.Enabled = false;
             this.mtbCidadeCli.Location = new System.Drawing.Point(7, 302);
             this.mtbCidadeCli.Name = "mtbCidadeCli";
-            this.mtbCidadeCli.Size = new System.Drawing.Size(175, 23);
-            this.mtbCidadeCli.TabIndex = 2;
+            this.mtbCidadeCli.Size = new System.Drawing.Size(307, 23);
+            this.mtbCidadeCli.TabIndex = 11;
             // 
             // lblUf
             // 
             this.lblUf.AutoSize = true;
-            this.lblUf.Location = new System.Drawing.Point(188, 284);
+            this.lblUf.Location = new System.Drawing.Point(320, 284);
             this.lblUf.Name = "lblUf";
             this.lblUf.Size = new System.Drawing.Size(21, 15);
             this.lblUf.TabIndex = 1;
@@ -251,16 +252,16 @@
             // mtbUfCli
             // 
             this.mtbUfCli.Enabled = false;
-            this.mtbUfCli.Location = new System.Drawing.Point(188, 302);
+            this.mtbUfCli.Location = new System.Drawing.Point(320, 302);
             this.mtbUfCli.Mask = "AA";
             this.mtbUfCli.Name = "mtbUfCli";
             this.mtbUfCli.Size = new System.Drawing.Size(33, 23);
-            this.mtbUfCli.TabIndex = 2;
+            this.mtbUfCli.TabIndex = 12;
             // 
             // lblCepCli
             // 
             this.lblCepCli.AutoSize = true;
-            this.lblCepCli.Location = new System.Drawing.Point(227, 284);
+            this.lblCepCli.Location = new System.Drawing.Point(359, 284);
             this.lblCepCli.Name = "lblCepCli";
             this.lblCepCli.Size = new System.Drawing.Size(28, 15);
             this.lblCepCli.TabIndex = 1;
@@ -269,16 +270,16 @@
             // mtbCepCli
             // 
             this.mtbCepCli.Enabled = false;
-            this.mtbCepCli.Location = new System.Drawing.Point(227, 302);
+            this.mtbCepCli.Location = new System.Drawing.Point(359, 302);
             this.mtbCepCli.Mask = "00000-000";
             this.mtbCepCli.Name = "mtbCepCli";
             this.mtbCepCli.Size = new System.Drawing.Size(87, 23);
-            this.mtbCepCli.TabIndex = 2;
+            this.mtbCepCli.TabIndex = 13;
             // 
             // lblComplemento
             // 
             this.lblComplemento.AutoSize = true;
-            this.lblComplemento.Location = new System.Drawing.Point(227, 240);
+            this.lblComplemento.Location = new System.Drawing.Point(359, 240);
             this.lblComplemento.Name = "lblComplemento";
             this.lblComplemento.Size = new System.Drawing.Size(84, 15);
             this.lblComplemento.TabIndex = 1;
@@ -287,17 +288,17 @@
             // mtbComplemento
             // 
             this.mtbComplemento.Enabled = false;
-            this.mtbComplemento.Location = new System.Drawing.Point(227, 258);
+            this.mtbComplemento.Location = new System.Drawing.Point(359, 258);
             this.mtbComplemento.Name = "mtbComplemento";
-            this.mtbComplemento.Size = new System.Drawing.Size(175, 23);
-            this.mtbComplemento.TabIndex = 2;
+            this.mtbComplemento.Size = new System.Drawing.Size(87, 23);
+            this.mtbComplemento.TabIndex = 10;
             // 
             // btnBusca
             // 
             this.btnBusca.Location = new System.Drawing.Point(139, 56);
             this.btnBusca.Name = "btnBusca";
             this.btnBusca.Size = new System.Drawing.Size(70, 23);
-            this.btnBusca.TabIndex = 3;
+            this.btnBusca.TabIndex = 1;
             this.btnBusca.Text = "Buscar";
             this.btnBusca.UseVisualStyleBackColor = true;
             this.btnBusca.Click += new System.EventHandler(this.btnBusca_Click);
@@ -307,7 +308,7 @@
             this.btnVoltar.Location = new System.Drawing.Point(345, 335);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(101, 24);
-            this.btnVoltar.TabIndex = 4;
+            this.btnVoltar.TabIndex = 16;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
@@ -317,7 +318,7 @@
             this.btnConfirmar.Location = new System.Drawing.Point(131, 336);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(101, 24);
-            this.btnConfirmar.TabIndex = 4;
+            this.btnConfirmar.TabIndex = 14;
             this.btnConfirmar.Text = "Confirmar";
             this.btnConfirmar.UseVisualStyleBackColor = true;
             this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
@@ -327,7 +328,7 @@
             this.btnLimpar.Location = new System.Drawing.Point(238, 336);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(101, 23);
-            this.btnLimpar.TabIndex = 5;
+            this.btnLimpar.TabIndex = 15;
             this.btnLimpar.Text = "Nova consulta";
             this.btnLimpar.UseVisualStyleBackColor = true;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);

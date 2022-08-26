@@ -39,21 +39,21 @@
             // 
             // btnCliente
             // 
-            this.btnCliente.Location = new System.Drawing.Point(48, 185);
+            this.btnCliente.Location = new System.Drawing.Point(13, 185);
             this.btnCliente.Margin = new System.Windows.Forms.Padding(4);
             this.btnCliente.Name = "btnCliente";
-            this.btnCliente.Size = new System.Drawing.Size(172, 38);
+            this.btnCliente.Size = new System.Drawing.Size(244, 38);
             this.btnCliente.TabIndex = 0;
-            this.btnCliente.Text = "Cadastro Cliente";
+            this.btnCliente.Text = "Cadastro/Consulta Cliente";
             this.btnCliente.UseVisualStyleBackColor = true;
             this.btnCliente.Click += new System.EventHandler(this.btnCliente_Click);
             // 
             // btnCarros
             // 
-            this.btnCarros.Location = new System.Drawing.Point(48, 228);
+            this.btnCarros.Location = new System.Drawing.Point(13, 228);
             this.btnCarros.Margin = new System.Windows.Forms.Padding(4);
             this.btnCarros.Name = "btnCarros";
-            this.btnCarros.Size = new System.Drawing.Size(172, 38);
+            this.btnCarros.Size = new System.Drawing.Size(244, 38);
             this.btnCarros.TabIndex = 1;
             this.btnCarros.Text = "Consulta de carros";
             this.btnCarros.UseVisualStyleBackColor = true;
@@ -61,10 +61,10 @@
             // 
             // btnPedidos
             // 
-            this.btnPedidos.Location = new System.Drawing.Point(48, 94);
+            this.btnPedidos.Location = new System.Drawing.Point(13, 94);
             this.btnPedidos.Margin = new System.Windows.Forms.Padding(4);
             this.btnPedidos.Name = "btnPedidos";
-            this.btnPedidos.Size = new System.Drawing.Size(172, 38);
+            this.btnPedidos.Size = new System.Drawing.Size(244, 38);
             this.btnPedidos.TabIndex = 3;
             this.btnPedidos.Text = "Novo Pedido";
             this.btnPedidos.UseVisualStyleBackColor = true;
@@ -72,10 +72,10 @@
             // 
             // btnSobre
             // 
-            this.btnSobre.Location = new System.Drawing.Point(48, 273);
+            this.btnSobre.Location = new System.Drawing.Point(13, 274);
             this.btnSobre.Margin = new System.Windows.Forms.Padding(4);
             this.btnSobre.Name = "btnSobre";
-            this.btnSobre.Size = new System.Drawing.Size(68, 38);
+            this.btnSobre.Size = new System.Drawing.Size(103, 38);
             this.btnSobre.TabIndex = 4;
             this.btnSobre.Text = "Sobre";
             this.btnSobre.UseVisualStyleBackColor = true;
@@ -83,10 +83,10 @@
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(149, 273);
+            this.btnSair.Location = new System.Drawing.Point(149, 274);
             this.btnSair.Margin = new System.Windows.Forms.Padding(4);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(71, 38);
+            this.btnSair.Size = new System.Drawing.Size(108, 38);
             this.btnSair.TabIndex = 5;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
@@ -105,10 +105,10 @@
             // 
             // btnConsultaPedido
             // 
-            this.btnConsultaPedido.Location = new System.Drawing.Point(48, 137);
+            this.btnConsultaPedido.Location = new System.Drawing.Point(13, 137);
             this.btnConsultaPedido.Margin = new System.Windows.Forms.Padding(1, 3, 1, 3);
             this.btnConsultaPedido.Name = "btnConsultaPedido";
-            this.btnConsultaPedido.Size = new System.Drawing.Size(172, 42);
+            this.btnConsultaPedido.Size = new System.Drawing.Size(244, 42);
             this.btnConsultaPedido.TabIndex = 7;
             this.btnConsultaPedido.Text = "Consulta Pedido";
             this.btnConsultaPedido.UseVisualStyleBackColor = true;
@@ -118,7 +118,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(270, 337);
+            this.ClientSize = new System.Drawing.Size(270, 325);
             this.Controls.Add(this.btnConsultaPedido);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSair);

@@ -23,6 +23,7 @@ namespace TrabalhoFinal_TP1
         private void FormPedidos_Load(object sender, EventArgs e)
         {
             mtb_CPF.Focus();
+            dtpAluguel.Value = DateTime.Now;
         }
 
         private void mtb_Atendente_TextChanged(object sender, EventArgs e)
@@ -106,6 +107,7 @@ namespace TrabalhoFinal_TP1
         {
             if (IDValido && CPFValido && PlacaValida && !string.IsNullOrEmpty(mtbDiarias.Text) && !string.IsNullOrEmpty(mtb_Valor_Total.Text))
             {
+                btnConfirmar.Enabled = false;
                 InicializaDBs.numPedido++;
                 await Task.Delay(TimeSpan.FromSeconds(5));
                 InicializaDBs.pedidos.Add(new Pedidos(InicializaDBs.numPedido, int.Parse(mtb_Atendente.Text), mtb_Placa.Text,
@@ -122,6 +124,7 @@ namespace TrabalhoFinal_TP1
                 IDValido = false;
                 PlacaValida = false;
                 CPFValido = false;
+                btnConfirmar.Enabled = true;
             }
             else
                 MessageBox.Show("Existem dados errados.", "Alerta");

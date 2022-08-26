@@ -146,6 +146,7 @@ namespace TrabalhoFinal_TP1
 
         private async void btnConfirmar_Click(object sender, EventArgs e)
         {
+            btnConfirmar.Enabled = false;
             await Task.Delay(TimeSpan.FromSeconds(3));
             if (string.IsNullOrEmpty(mtbComplemento.Text))
                 mtbComplemento.Text = " ";

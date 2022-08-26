@@ -99,7 +99,7 @@
             this.mtb_Valor_Total.Location = new System.Drawing.Point(11, 325);
             this.mtb_Valor_Total.Name = "mtb_Valor_Total";
             this.mtb_Valor_Total.Size = new System.Drawing.Size(255, 23);
-            this.mtb_Valor_Total.TabIndex = 29;
+            this.mtb_Valor_Total.TabIndex = 4;
             // 
             // lblValorTotal
             // 
@@ -124,7 +124,7 @@
             this.btnConfirmar.Location = new System.Drawing.Point(171, 354);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(95, 25);
-            this.btnConfirmar.TabIndex = 30;
+            this.btnConfirmar.TabIndex = 5;
             this.btnConfirmar.Text = "Confirmar";
             this.btnConfirmar.UseVisualStyleBackColor = true;
             this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
@@ -134,7 +134,7 @@
             this.btnVoltar.Location = new System.Drawing.Point(11, 354);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(95, 25);
-            this.btnVoltar.TabIndex = 30;
+            this.btnVoltar.TabIndex = 6;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
@@ -146,7 +146,7 @@
             this.mtb_CPF.Name = "mtb_CPF";
             this.mtb_CPF.PromptChar = ' ';
             this.mtb_CPF.Size = new System.Drawing.Size(151, 23);
-            this.mtb_CPF.TabIndex = 31;
+            this.mtb_CPF.TabIndex = 0;
             this.mtb_CPF.TextChanged += new System.EventHandler(this.mtb_CPF_TextChanged);
             // 
             // mtb_Atendente
@@ -156,7 +156,7 @@
             this.mtb_Atendente.Name = "mtb_Atendente";
             this.mtb_Atendente.PromptChar = ' ';
             this.mtb_Atendente.Size = new System.Drawing.Size(95, 23);
-            this.mtb_Atendente.TabIndex = 32;
+            this.mtb_Atendente.TabIndex = 1;
             this.mtb_Atendente.TextChanged += new System.EventHandler(this.mtb_Atendente_TextChanged);
             // 
             // mtb_Placa
@@ -166,7 +166,7 @@
             this.mtb_Placa.Name = "mtb_Placa";
             this.mtb_Placa.PromptChar = ' ';
             this.mtb_Placa.Size = new System.Drawing.Size(95, 23);
-            this.mtb_Placa.TabIndex = 33;
+            this.mtb_Placa.TabIndex = 2;
             this.mtb_Placa.TextChanged += new System.EventHandler(this.mtb_Placa_TextChanged);
             // 
             // lblCPF
@@ -200,7 +200,7 @@
             this.mtbDiarias.Name = "mtbDiarias";
             this.mtbDiarias.PromptChar = ' ';
             this.mtbDiarias.Size = new System.Drawing.Size(256, 23);
-            this.mtbDiarias.TabIndex = 37;
+            this.mtbDiarias.TabIndex = 4;
             this.mtbDiarias.TextChanged += new System.EventHandler(this.mtbDiarias_TextChanged);
             // 
             // dtpAluguel
@@ -209,7 +209,7 @@
             this.dtpAluguel.Location = new System.Drawing.Point(13, 221);
             this.dtpAluguel.Name = "dtpAluguel";
             this.dtpAluguel.Size = new System.Drawing.Size(93, 23);
-            this.dtpAluguel.TabIndex = 38;
+            this.dtpAluguel.TabIndex = 3;
             this.dtpAluguel.Value = new System.DateTime(2022, 8, 25, 18, 25, 50, 0);
             // 
             // FormPedidos
